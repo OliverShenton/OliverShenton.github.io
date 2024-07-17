@@ -1,0 +1,180 @@
+body {
+  color: rgb(0, 0, 0);
+  max-width: 1200px;
+  margin: auto;
+}
+
+.hr1 {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(left, whitesmoke, #d3d3d3, whitesmoke);
+  background-image: -o-linear-gradient(left, whitesmoke, #d3d3d3, whitesmoke);
+  background-image: -moz-linear-gradient(left, whitesmoke, #d3d3d3, whitesmoke);
+  background-image: -webkit-linear-gradient(
+    left,
+    whitesmoke,
+    #d3d3d3,
+    whitesmoke
+  );
+}
+
+/* ------------------------------------------------------------------------------------------------------- */
+/* Header name */
+.heaname {
+  font-family: sans-serif;
+  font-size: 50px;
+  padding: 10px 10px 0px 10px;
+  /* text-align: center; */
+}
+
+/* ------------------------------------------------------------------------------------------------------- */
+/* Navigation bar */
+.navigationbar {
+  border: 0;
+  height: 40px;
+  margin-right: 10px;
+  position: sticky;
+  padding: 5px;
+  overflow: hidden;
+}
+
+/* Navigation bar - anchors */
+.navigationbar a {
+  float: right;
+  color: rgb(107, 105, 105);
+  text-align: center;
+  padding: 10px 25px;
+  text-decoration: none;
+  font-size: 20px;
+  font-style: sans-serif;
+}
+
+/* ------------------------------------------------------------------------------------------------------- */
+/* About me button */
+#aboutmebutton {
+  background-color: #f5f5f5;
+  color: black;
+  border-radius: 20px;
+}
+
+/* ------------------------------------------------------------------------------------------------------- */
+/* Introduction section */
+.introduction {
+  font-family: sans-serif;
+  background-color: #f5f5f5;
+  border-radius: 20px;
+  margin-top: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-style: dotted;
+  border-color: #ffc000;
+  padding: 25px;
+}
+
+.intintrocontainer {
+  display: inline-grid;
+  grid-template-columns: 100px 100px;
+  grid-gap: 3px;
+}
+
+.intpicture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  font-size: 3em;
+}
+
+.inabout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  font-size: 3em;
+}
+
+/* ------------------------------------------------------------------------------------------------------- */
+/* Key skills section */
+.keyskills {
+  font-family: sans-serif;
+  background-color: #f5f5f5;
+  border-radius: 20px;
+  margin-top: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-style: dotted;
+  border-color: #ffc000;
+  padding: 25px;
+}
+
+.keycolumnscontainer {
+  display: grid;
+  grid-template: auto / auto auto auto;
+  /* text-align: center; */
+}
+
+/* ------------------------------------------------------------------------------------------------------- */
+/* Education and Employment section */
+.empedusection {
+  font-family: sans-serif;
+  background-color: #f5f5f5;
+  border-radius: 20px;
+  margin-top: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-style: dotted;
+  border-color: #ffc000;
+  padding: 25px;
+}
+
+/* Education and Employment title */
+.maintitle {
+  font-size: 20pt;
+  text-align: center;
+  text-decoration: underline;
+}
+
+/* ------------------------------------------------------------------------------------------------------- */
+/* Education and Employment container */
+.empeducontainer {
+  margin-left: 20px;
+  margin-top: 50px;
+}
+
+/* Education and Employment date */
+.empedudate {
+  float: right;
+  margin-right: 20px;
+  font-size: 100%;
+}
+
+/* Education and Employment title */
+.empedutitle {
+  margin-left: 20px;
+  font-size: 120%;
+  line-height: 10%;
+}
+
+/* Education and Employment location */
+.empedulocation {
+  margin-left: 20px;
+  font-size: 90%;
+  font-style: italic;
+  line-height: 25%;
+}
+
+/* Education and Employment bullet points */
+.empedupoints {
+  margin-left: 20px;
+  font-size: 100%;
+}
+
+/* ------------------------------------------------------------------------------------------------------- */
+/* Footer */
+.footer {
+  font-family: sans-serif;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
