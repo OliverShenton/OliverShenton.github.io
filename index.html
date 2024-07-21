@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+  <!----------------------------------------------------------------------------------------------------------->
   <head>
     <!-- Defines the encoding of the website -->
     <meta charset="utf-8" />
@@ -20,58 +21,66 @@
     <!-- Theme colour -->
     <meta name="theme-color" content="#F5F5F5"
   </head>
+
+  <!----------------------------------------------------------------------------------------------------------->
   <body>
     <!-- Header -->
     <header>
+      <div class="heacontainer">
       <div class="heaname">Oliver Shenton BSc</div>
+      <a href="CV/Oliver Shenton CV.docx" download="">
+        <button class="button" type="button">Download CV!</button>
+      </a>
+    </div>
     </header>
 
+    <!----------------------------------------------------------------------------------------------------------->
     <hr class="hr1" />
 
+    <!----------------------------------------------------------------------------------------------------------->
     <!-- Navigation bar -->
     <nav class="navigationbar">
-      <a href="mailto: olivermshenton@hotmail.com" target="_blank">Email</a>
-      <a href="https://github.com/OliverShenton" target="_blank">GitHub</a>
+      <a id="aboutmebutton" href="" ><b>About me</b></a>
+      <a href="projects.html">Projects</a>
       <a href="http://linkedin.com/in/olivershenton/" target="_blank"
-        >LinkedIn</a
-      >
-      <a href="Projects">Projects</a>
-      <a id="aboutmebutton" href="About ME"><b>About me</b></a>
+        >LinkedIn</a>
+        <a href="https://github.com/OliverShenton" target="_blank">GitHub</a>
+      <a href="mailto: olivermshenton@hotmail.com" target="_blank">Email</a>
     </nav>
 
+    <!----------------------------------------------------------------------------------------------------------->
     <!-- Introduction section -->
     <section class="introduction">
-      <div class="intintrocontainer">
       <div class="intpicture">
-        <img src="Pictures/portrait.jpeg" style="height: 300px; width: 300px" />
+        <img src="Pictures/portrait.jpeg" style="height: 300px; width: 300px; border: 5px solid black; padding: 3px; margin: 5px;" />
       </div>
       <div class="intabout">
         <h1 class="intro">About Me!</h1>
         <p>Hello, my name is oliver and I am a DNA Analyst</p>
       </div>
-    </div>
     </section>
 
+    <!----------------------------------------------------------------------------------------------------------->
     <!-- Key skills section -->
     <section class="keyskills">
-      <div class="maintitle"><h1>Key Skills!</h1></div>
+      <div class="maintitle"><h2>Key Skills</h2></div>
       <div class="keycolumnscontainer">
-        <div class="keycolumn1">
-          <ul>
+        <div>
+          <ul class="keycolumn">
           <li>Point 1</li>
           <li>Point 2</li>
           <li>Point 3</li>
         </ul>
       </div>
-        <div class="keycolumn2">
-          <ul>
+        <div>
+          <ul class="keycolumn">
             <li>Point 1</li>
             <li>Point 2</li>
             <li>Point 3</li>
           </ul>
         </div>
-        <div class="keycolumn3">
-          <ul>
+        <div>
+          <ul class="keycolumn">
             <li>Point 1</li>
             <li>Point 2</li>
             <li>Point 3</li>
@@ -80,161 +89,157 @@
       </div>
     </section>
 
+    <!----------------------------------------------------------------------------------------------------------->
     <!-- Employment history section -->
     <section class="empedusection">
+      <div class="seccontainer">
       <!-- Employment title -->
-      <div class="maintitle">
-        <h1>Employment History!</h1>
-      </div>
+      <div class="maintitle" style="width: 100%;">
+        <h2>Employment History</h2>
+    </div>
+    <!-- Visibility button -->
+     <button class="button" onclick="employmentHideClick()">Hide Section!</button>
+  </div>
+
+    <div id="employhidden">
+      <!----------------------------------------------------------------------------------------------------------->
       <!-- Employment 1 - DNA Analyst -->
-      <div class="empeducontainer">
+      <div>
         <!-- DNA Analysts - title / date -->
-        <div>
+        <div class="empeducontainer">
+          <div class="empedutitle"><h2>Established DNA Analyst</h2></div>
           <div class="empedudate">07/2021 - Present</div>
-          <div class="empedutitle"><b>Established DNA Analyst</b></div>
         </div>
         <!-- DNA Analyst - location -->
         <div class="empedulocation">
-          <h3>Eurofins Forensics Science - Birchwood Park, Risley, WA36FW</h3>
+          <h4><a href="https://www.eurofins.co.uk/forensic-services/" target="_blank">Eurofins Forensics Science</a> - Birchwood Park, Risley, WA36FW</h4>
         </div>
         <!-- DNA Analyst - bullet points -->
         <div class="empedupoints">
           <ul>
-            <li>
-              Routinely cooperate with Laboratory Information Management System
-              (LIMS) developers, the Quality department, and Technical
-              Specialists to perform User Acceptance Tests, and provide test
-              cases.
-            </li>
-            <li>
-              Currently serve the role as a laboratory trainer and owner, aiding
-              within the lab, training new starters, and being the point of
-              contact for the relevant Production Supervisors.
-            </li>
-            <li>Point 3</li>
-            <li>Point 4</li>
-            <li>Point 5</li>
+            <li></li>
           </ul>
         </div>
       </div>
 
+      <!----------------------------------------------------------------------------------------------------------->
       <!-- Employment 2 - Programming -->
-      <div class="empeducontainer">
+      <div>
         <!-- Programming - title / date -->
-        <div>
-          <div class="empedudate">2022 - Present</div>
+        <div  class="empeducontainer">
           <div class="empedutitle"><h2>Programming</h2></div>
+          <div class="empedudate">2022 - Present</div>
         </div>
         <!-- Programming - location -->
         <div class="empedulocation">
-          <h3>
-            "The Complete JavaScript Course 2023: From Zero to Expert!" - In
+          <h4><a href="https://www.udemy.com/course/the-complete-javascript-course/" target="_blank">"The Complete JavaScript Course 2023: From Zero to Expert!"</a> - In
             progress
-          </h3>
-          <h3>
-            "The Complete SQL bootcamp: Go From Zero to Hero" - Completed
-            (October 2023)
-          </h3>
+          </h4>
+          <h4><a href="https://www.udemy.com/course/the-complete-sql-bootcamp/" target="_blank">"The Complete SQL bootcamp: Go From Zero to Hero"</a>
+             - Completed
+            (October 2023 - <a href="Pictures\The Complete SQL Bootcamp Go from Zero to Hero - Certificate.jpg" download="">Certificate</a>)
+          </h4>
         </div>
         <!-- Programming - bullet points -->
         <div class="empedupoints">
           <ul>
-            <li>Actively pursued my enthusiasm for programming, primarily focusing on JavaScript, CSS, and HTML, by taking online courses to advance my knowledge.</li>
-            <li>Besides learning JavaScript, I have also completed a course on SQL, using PostgreSQL, began learning Java, and have written a couple of python scripts.</li>
-            <li>Researched, designed, coded and debugged various projects (Check the navigation bar).</li>
-            <li>Published three (3) mobile applications to the Google Play Store, using Java and Android Studio, resulting in over one thousand (1000) downloads.</li>
-            <li>Point 5</li>
+            <li></li>
           </ul>
         </div>
       </div>
 
+     <!----------------------------------------------------------------------------------------------------------->
       <!-- Employment 3 - Bar team member -->
       <div>
         <!-- Bar team member - title / date -->
-        <div class="empeducontainer">
-          <div>
-          <div class="empedudate">04/2019 - 08/2022</div>
+          <div  class="empeducontainer">
           <div class="empedutitle"><h2>Bar Team Member</h2></div>
+          <div class="empedudate">04/2019 - 08/2022</div>
         </div>
         <!-- Bar team member - location -->
         <div class="empedulocation">
-          <h3>Brunning & Price - The Old Hall, Sandbach, CW111AL</h3>
-          <h3>Stonegate Group - The Kiln, Newcastle-Under-Lyme, ST51PS</h3>
+          <h4>Brunning & Price - <a href="https://www.brunningandprice.co.uk/oldhall/" target="_blank">The Old Hall</a>, Sandbach, CW111AL</h4>
+          <h4>Stonegate Group - <a href="https://www.slugandlettuce.co.uk/newcastle-under-lyme" target="_blank">The Kiln</a>, Newcastle-Under-Lyme, ST51PS (Now Slug and Lettuce)</h4>
         </div>
         <!-- Bar team member - bullet points -->
         <div class="empedupoints">
           <ul>
-            <li>Point 1</li>
-            <li>Point 2</li>
-            <li>Point 3</li>
-            <li>Point 4</li>
-            <li>Point 5</li>
+            <li></li>
           </ul>
         </div>
       </div>
 
+      <!----------------------------------------------------------------------------------------------------------->
       <!-- Employment 4 - Vocational placement -->
       <div>
         <!-- Vocation placement - title / date -->
-        <div class="empeducontainer">
-          <div>
-          <div class="empedudate">06/2019 - 09/2019</div>
+          <div class="empeducontainer">
           <div class="empedutitle"><h2>Vocational Placement</h2></div>
+          <div class="empedudate">06/2019 - 09/2019</div>
         </div>
         <!-- Vocation placement - location -->
         <div class="empedulocation">
-          <h3>The Christies NHS Foundation Trust - Manchester, M204BX</h3>
+          <h4><a href="https://www.christie.nhs.uk/" target="_blank">The Christies NHS Foundation Trust</a> - Manchester, M204BX</h4>
         </div>
         <!-- Vocation placement - bullet points -->
         <div class="empedupoints">
           <ul>
-            <li>Worked closely within a group of PhD students, Doctors, and fellow undergraduates to further proton therapy research.</li>
-            <li>Collected data pertaining to the BRCCA2 gene (Breast Cancer gene 2) from a variety of studies.</li>
-            <li>Manipulated data by inserting it into a model, using python scripts, designed to improve the precision of early cancer detection.</li>
+            <li>Secured a three-month vocational placement with a world-leading proton therapy research team.</li>
+            <li>Collaborated meticulously with undergraduates, PhD candidates, and medical doctors to research proton beam therapy, with a specific focus on breast cancer.</li>
+            <li>Reviewed hundreds of peer-reviewed studies on the BRCA2 gene, which is a gene that provides instructions for making tumor-suppressing proteins.</li>
+            <li>Collected data from various fluorescent imaging techniques of the BRCA2 gene and entered it into the 'DaMaRiS' model, which is designed to guide DNA damage and repair in proton therapy treatment planning and enhance the precision of early cancer detection.</li>
+            <li>Developed and utilized basic Python scripts with 'Anaconda' to manipulate data within the model.</li>
           </ul>
         </div>
       </div>
 
+      <!----------------------------------------------------------------------------------------------------------->
       <!-- Employment 5 - Swimming Teacher -->
       <div>
         <!-- Swimming Teacher - title / date -->
-        <div class="empeducontainer">
-          <div>
-          <div class="empedudate">04/2013 - 09/2019</div>
+          <div  class="empeducontainer">
           <div class="empedutitle"><h2>Swimming Teacher</h2></div>
+          <div class="empedudate">04/2013 - 09/2019</div>
         </div>
         <!-- Swimming Teacher - location -->
         <div class="empedulocation">
-          <h3>Sandbach Sharks Amateur Swimming Club - Sandbach, Cheshire</h3>
+          <h4><a href="https://www.sandbachsharks.co.uk/" target="_blank">Sandbach Sharks Amateur Swimming Club</a> - Sandbach, Cheshire</h4>
         </div>
         <!-- Swimming Teacher - bullet points -->
         <div class="empedupoints">
           <ul>
-            <li>Point 1</li>
-            <li>Point 2</li>
-            <li>Point 3</li>
-            <li>Point 4</li>
-            <li>Point 5</li>
+            <li>Enhanced my ability to teach and train water safety and swimming strokes to children (ages 5 to 16), catering to skill levels from non-swimmers to national competitors.</li>
+            <li>Adapted teaching methods to suit individual abilities and accommodate various learning speeds and styles of the children.</li>
+            <li>Developed techniques to motivate and encourage children, creating a positive and enjoyable learning environment that boosted their confidence and enthusiasm for swimming.</li>
+            <li>Communicated effectively with children to convey instructions and provide feedback, ensuring their understanding and progress.</li>
+            <li>Emphasized water safety by recognizing and responding to emergencies, implementing protocols, and ensuring a secure learning environment; provideding immediate safety and reassurance while equipping children with lifelong skills to overcome the fears and challenges in the water.</li>
+            <li>Skilled in observing swimmers' techniques, managing behavioral changes, and identifying areas for improvement, while addressing any issues that arise during lessons.</li>
+            <li>Experienced in planning and organizing lessons, managing schedules, and providing a structured, progressive learning experience for swimmers by leading the group with a teaching assistant to ensure efficient operations.</li>
+            <li>Skilled in interacting with parents, guardians, and other stakeholders, addressing their concerns, and providing updates on swimmers' progress to ensure a positive experience for everyone involved.</li>
+            <li>Responsible for analysing and assessing swimmers against established criteria, and making informed decisions based on this data.</li>
           </ul>
         </div>
       </div>
+    </div>
     </section>
 
+    <!----------------------------------------------------------------------------------------------------------->
     <!-- Education history section -->
     <section class="empedusection">
       <div class="maintitle">
-        <h1>Education History!</h1>
+        <h2>Education History</h2>
       </div>
+
+      <!----------------------------------------------------------------------------------------------------------->
       <!-- Education 1 - University -->
-      <div class="empeducontainer">
         <!-- Swimming teacher - title / date -->
-        <div>
-          <div class="empedudate">2016 - 2020</div>
+        <div class="empeducontainer"> 
           <div class="empedutitle"><h2>Keele University</h2></div>
+          <div class="empedudate">2016 - 2020</div>
         </div>
         <!-- University - location -->
         <div class="empedulocation">
-          <h3>Lennard-Jones Building, Keele, Newcastle-Under-Lyme, ST55BG</h3>
+          <h4>Lennard-Jones Building, Keele, Newcastle-Under-Lyme, ST55BG</h4>
         </div>
         <!-- University - bullet points -->
         <div class="empedupoints">
@@ -242,19 +247,18 @@
             <li>Bachelor of Science (BSc) hons: Forensic Science.</li>
             <li>Second class honours.</li>
           </ul>
-        </div>
       </div>
 
+      <!----------------------------------------------------------------------------------------------------------->
       <!-- Education 2 - A-Level/GCSE -->
-      <div class="empeducontainer">
         <!-- A-Level/GCSE - title / date -->
-        <div>
-          <div class="empedudate">2009 - 2016</div>
+        <div class="empeducontainer">          
           <div class="empedutitle"><h2>Sandbach School</h2></div>
+          <div class="empedudate">2009 - 2016</div>
         </div>
         <!-- A-Level/GCSE - location -->
         <div class="empedulocation">
-          <h3>Crewe Road, Sandbach, CW113NS</h3>
+          <h4>Crewe Road, Sandbach, CW113NS</h4>
         </div>
         <!-- A-Level/GCSE - bullet points -->
         <div class="empedupoints">
@@ -264,21 +268,23 @@
             <li>A in Maths and English.</li>
           </ul>
         </div>
-      </div>
 
+        <!----------------------------------------------------------------------------------------------------------->
       <!-- Education 3 - Other -->
-      <div class="empeducontainer">
         <!-- Other - title -->
         <div class="empedutitle"><h2>Other</h2></div>
         <!-- Other - bullet points -->
         <div class="empedupoints">
           <ul>
             <li>Full UK driving license.</li>
+            <li>Level 1 Swimming Teacher Qualification.</li>
+            <li>Black belt - Karate, Kickboxing, and Brazilian Jui Jitsue.</li>
           </ul>
         </div>
       </div>
     </section>
 
+    <!----------------------------------------------------------------------------------------------------------->
     <!-- Footer -->
     <footer class="footer">
       <a href="#">Back to top</a>

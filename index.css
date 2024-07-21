@@ -20,11 +20,31 @@ body {
 
 /* ------------------------------------------------------------------------------------------------------- */
 /* Header name */
+
+.heacontainer {
+  display: grid;
+  grid-template: auto / auto auto;
+  padding: 10px 10px 0px 10px;
+}
+
 .heaname {
   font-family: sans-serif;
   font-size: 50px;
-  padding: 10px 10px 0px 10px;
-  /* text-align: center; */
+  margin-left: 25px;
+  margin-top: 20px;
+}
+
+.button {
+  float: right;
+  background-color: f5f5f5;
+  padding: 15px;
+  margin-right: 25px;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+
+.button:hover {
+  background-color: royalblue;
 }
 
 /* ------------------------------------------------------------------------------------------------------- */
@@ -32,18 +52,18 @@ body {
 .navigationbar {
   border: 0;
   height: 40px;
-  margin-right: 10px;
   position: sticky;
-  padding: 5px;
+  padding: 20px;
   overflow: hidden;
+  text-align: center;
 }
 
 /* Navigation bar - anchors */
 .navigationbar a {
-  float: right;
   color: rgb(107, 105, 105);
   text-align: center;
-  padding: 10px 25px;
+  padding: 15px;
+  margin-right: 50px;
   text-decoration: none;
   font-size: 20px;
   font-style: sans-serif;
@@ -68,7 +88,6 @@ body {
   margin-right: 20px;
   border-style: dotted;
   border-color: #ffc000;
-  padding: 25px;
 }
 
 .intintrocontainer {
@@ -80,17 +99,6 @@ body {
 .intpicture {
   display: flex;
   justify-content: center;
-  align-items: center;
-  border: 2px solid black;
-  font-size: 3em;
-}
-
-.inabout {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 2px solid black;
-  font-size: 3em;
 }
 
 /* ------------------------------------------------------------------------------------------------------- */
@@ -104,13 +112,16 @@ body {
   margin-right: 20px;
   border-style: dotted;
   border-color: #ffc000;
-  padding: 25px;
 }
 
 .keycolumnscontainer {
   display: grid;
   grid-template: auto / auto auto auto;
-  /* text-align: center; */
+  text-align: center;
+}
+
+.keycolumn {
+  display: inline-block;
 }
 
 /* ------------------------------------------------------------------------------------------------------- */
@@ -124,7 +135,11 @@ body {
   margin-right: 20px;
   border-style: dotted;
   border-color: #ffc000;
-  padding: 25px;
+}
+
+.seccontainer {
+  display: grid;
+  grid-template: auto/auto auto;
 }
 
 /* Education and Employment title */
@@ -137,35 +152,35 @@ body {
 /* ------------------------------------------------------------------------------------------------------- */
 /* Education and Employment container */
 .empeducontainer {
-  margin-left: 20px;
-  margin-top: 50px;
-}
-
-/* Education and Employment date */
-.empedudate {
-  float: right;
-  margin-right: 20px;
-  font-size: 100%;
+  display: grid;
+  grid-template: auto/ auto auto;
 }
 
 /* Education and Employment title */
 .empedutitle {
-  margin-left: 20px;
+  margin-left: 25px;
   font-size: 120%;
-  line-height: 10%;
+}
+
+/* Education and Employment date */
+.empedudate {
+  margin: auto;
+  margin-right: 25px;
+  font-size: 100%;
 }
 
 /* Education and Employment location */
 .empedulocation {
-  margin-left: 20px;
+  margin-left: 25px;
   font-size: 90%;
   font-style: italic;
-  line-height: 25%;
+  line-height: 0.15;
 }
 
 /* Education and Employment bullet points */
 .empedupoints {
-  margin-left: 20px;
+  margin-left: 25px;
+  margin-right: 75px;
   font-size: 100%;
 }
 
