@@ -19,71 +19,170 @@
       content="Oliver Shenton's CV in the form of a website"
     />
     <!-- Theme colour -->
-    <meta name="theme-color" content="#F5F5F5"
+    <meta name="theme-color" content="#F5F5F5" />
   </head>
 
   <!----------------------------------------------------------------------------------------------------------->
+  <!-- Body -->
   <body>
+
+    <!----------------------------------------------------------------------------------------------------------->
     <!-- Header -->
     <header>
       <div class="heacontainer">
-      <div class="heaname">Oliver Shenton BSc</div>
-      <a href="CV/Oliver Shenton CV.docx" download="">
-        <button class="button" type="button">Download CV!</button>
-      </a>
-    </div>
+        <div class="heaconname">Oliver Shenton BSc</div>
+        <nav class="heaconnavigation">
+          <a href="projects.html">Projects</a>
+          <a href="#sectionexperiencehistory">Experience</a>
+          <a href="#sectioneducationhistory">Education</a>
+          <a href="#sectionskills">Skills</a>
+          <a href="#sectioncontact">Contact</a>
+        </nav>
+      </div>
     </header>
 
     <!----------------------------------------------------------------------------------------------------------->
-    <hr class="hr1" />
+<div class="background">
 
-    <!----------------------------------------------------------------------------------------------------------->
-    <!-- Navigation bar -->
-    <nav class="navigationbar">
-      <a id="aboutmebutton" href="" ><b>About me</b></a>
-      <a href="projects.html">Projects</a>
-      <a href="http://linkedin.com/in/olivershenton/" target="_blank"
-        >LinkedIn</a>
-        <a href="https://github.com/OliverShenton" target="_blank">GitHub</a>
-      <a href="mailto: olivermshenton@hotmail.com" target="_blank">Email</a>
-    </nav>
-
-    <!----------------------------------------------------------------------------------------------------------->
-    <!-- Introduction section -->
-    <section class="introduction">
-      <div class="intpicture">
-        <img src="Pictures/portrait.jpeg" style="height: 300px; width: 300px; border: 5px solid black; padding: 3px; margin: 5px;" />
+    <!-- Section 1 - Picture + Details -->
+     <section id="sectionpicturedetails">
+      <div class="seccard">
+        <div class="seccargrid">
+          <div class="seccargripicture">
+            <img src="Pictures/portrait.jpeg"  alt="Oliver Shenton" style="height: 300px; width: 300px; border: 5px solid black; padding: 3px; margin: 5px;">
+          </div>
+          <div class="seccargridetails" >
+            <div class="seccargrigap">
+            <h2 style="margin:0;">Oliver Shenton</h2>
+            <p style="margin:0;">(Require 2 months notice)</p>
+          </div>
+            <div class="seccargrigap">
+              <h4 style="margin:0;">Phone:</h4>
+              <p style="margin:0;">(+447473826355)</p>
+            </div>
+            <div class="seccargrigap">
+              <h4 style="margin:0;">Email:</h4>
+              <a href="mailto: olivermshenton@hotmail.com"><p style="margin:0;">olivermshenton@hotmail.com</p></a>
+            </div>
+            <div class="seccargrigaplast">
+              <h4 style="margin:0;">Address:</h4>
+              <p style="margin:0;">Sandbach, Cheshire, CW11</p>
+            </div>
+          <div>
+            <a href="CV/Oliver Shenton CV.docx" download="" title="Download CV">
+              <button class="downloadbutton" type="button">Download CV</button>
+            </a>
+          </div>
+          </div>
+        </div>
+        <div class="seccaricoborder">
+        <div class="seccardicons">
+            <a href="http://linkedin.com/in/olivershenton/" target="_blank"><img src="Pictures\LinkedIn - Icon.png" title="LinkedIn"></a>
+            <a href="https://github.com/OliverShenton" target="_blank"><img src="Pictures\GitHub - Icon.png" title="GitHub"></a>
+          </div>
+        </div>
       </div>
-      <div class="intabout">
-        <h1 class="intro">About Me!</h1>
-        <p>Hello, my name is oliver and I am a DNA Analyst</p>
+     </section>
+
+    <!----------------------------------------------------------------------------------------------------------->
+    <!-- Section 2 - Introduction -->
+    <section id="sectionstart">
+      <div class="secintmiddle">
+        <div class="secintmidtitle"><h2>Hello, I am Oliver</h2></div>
+        <div class="secintmidtext">Words and words and words and some more words.</div>
+      </div>      
+    </section>
+
+    <!----------------------------------------------------------------------------------------------------------->
+    <!-- Section 3 - Experience History -->
+    <section id="sectionmiddle">
+      <div class="sectitle">
+        <h2>Experience</h2>
+      </div>
+      <hr class="hr1">
+
+      <div class="secexpdetails">
+        <div class="secexpdetcontainer">
+          <div class="secexpdetcontitle"><h2>Experienced DNA Analyst</h2></div>
+          <div class="date">07/2021 - Present</div>          
+        </div>
+      </div>
+      <hr class="hr1">
+    </section>
+
+    <div class="empeducontainer">
+      <div class="empedutitle"><h2>Established DNA Analyst</h2></div>
+      <div class="empedudate">07/2021 - Present</div>
+    </div>
+    <!-- DNA Analyst - location -->
+    <div class="empedulocation">
+      <h4><a href="https://www.eurofins.co.uk/forensic-services/" target="_blank">Eurofins Forensics Science</a> - Birchwood Park, Risley, WA36FW</h4>
+    </div>
+    <!-- DNA Analyst - bullet points -->
+    <div class="empedupoints">
+      <ul>
+        <li></li>
+      </ul>
+    </div>
+
+    <!----------------------------------------------------------------------------------------------------------->
+    <!-- Section 4 - Education History -->
+    <section id="sectionmiddle">
+      <div class="sectitle">
+        <h2>Education</h2>
+      </div>
+      <hr class="hr1">
+      <div class="secedudetails">
+        <p>Education details</p>
+      </div>
+      <hr class="hr1">
+    </section>
+
+    <!----------------------------------------------------------------------------------------------------------->
+    <!-- Section 5 - Skills -->
+    <section id="sectionmiddle">
+      <div class="sectitle">
+        <h2>Skills</h2>
+      </div>
+      <hr class="hr1">
+      <div class="secskidetails">
+        <p>Skills</p>
       </div>
     </section>
 
     <!----------------------------------------------------------------------------------------------------------->
+    <!-- Section 6 - Contact -->
+    <section id="sectionend">
+      <div class="sectitle">
+        <h2>Contact Me</h2>
+      </div>
+      <div class="seccondetails"></div>
+    </section>
+
+    <!----------------------------------------------------------------------------------------------------------->
     <!-- Key skills section -->
-    <section class="keyskills">
-      <div class="maintitle"><h2>Key Skills</h2></div>
+    <section class="keyempedusection">
+      <div class="maintitle"><h1>Key Skills</h1></div>
       <div class="keycolumnscontainer">
         <div>
           <ul class="keycolumn">
-          <li>Point 1</li>
+          <li><a href="#"></a></li>
           <li>Point 2</li>
           <li>Point 3</li>
         </ul>
       </div>
         <div>
           <ul class="keycolumn">
-            <li>Point 1</li>
-            <li>Point 2</li>
-            <li>Point 3</li>
+            <li>Point 4</li>
+            <li>Point 5</li>
+            <li>Point 6</li>
           </ul>
         </div>
         <div>
           <ul class="keycolumn">
-            <li>Point 1</li>
-            <li>Point 2</li>
-            <li>Point 3</li>
+            <li>Point 7</li>
+            <li>Point 8</li>
+            <li>Point 9</li>
           </ul>
         </div>
       </div>
@@ -91,17 +190,13 @@
 
     <!----------------------------------------------------------------------------------------------------------->
     <!-- Employment history section -->
-    <section class="empedusection">
-      <div class="seccontainer">
+    <section class="keyempedusection">
       <!-- Employment title -->
-      <div class="maintitle" style="width: 100%;">
-        <h2>Employment History</h2>
+      <div class="maintitle">
+        <h1>Employment History</h1>
     </div>
-    <!-- Visibility button -->
-     <button class="button" onclick="employmentHideClick()">Hide Section!</button>
-  </div>
 
-    <div id="employhidden">
+    <div id="employmenthidden">
       <!----------------------------------------------------------------------------------------------------------->
       <!-- Employment 1 - DNA Analyst -->
       <div>
@@ -117,7 +212,7 @@
         <!-- DNA Analyst - bullet points -->
         <div class="empedupoints">
           <ul>
-            <li></li>
+            <li>At present, I am the lab trainer, responsible for</li>
           </ul>
         </div>
       </div>
@@ -164,6 +259,9 @@
         <!-- Bar team member - bullet points -->
         <div class="empedupoints">
           <ul>
+            <li>Developed strong interpersonal and customer service skills by providing a friendly, and efficient service to a diverse clientele, ensuring a positive customer experience, all while being compliant and adhering to local laws and regulations regarding alcohol service.</li>
+            <li>Ensured quality and consistency when preparing requested beverages, by following recipes and customer preferences, as well as staying up to date on the latest trends in beverages.</li>
+            <li>Developed strong active listening skills through clear and effective communication with the customers and team members, providing a seamless experience.</li>
             <li></li>
           </ul>
         </div>
@@ -208,7 +306,7 @@
         <!-- Swimming Teacher - bullet points -->
         <div class="empedupoints">
           <ul>
-            <li>Enhanced my ability to teach and train water safety and swimming strokes to children (ages 5 to 16), catering to skill levels from non-swimmers to national competitors.</li>
+            <li>Enhanced my ability to teach water safety and train swimming strokes to children (ages 5 to 16), catering to skill levels from non-swimmers to national competitors.</li>
             <li>Adapted teaching methods to suit individual abilities and accommodate various learning speeds and styles of the children.</li>
             <li>Developed techniques to motivate and encourage children, creating a positive and enjoyable learning environment that boosted their confidence and enthusiasm for swimming.</li>
             <li>Communicated effectively with children to convey instructions and provide feedback, ensuring their understanding and progress.</li>
@@ -225,11 +323,12 @@
 
     <!----------------------------------------------------------------------------------------------------------->
     <!-- Education history section -->
-    <section class="empedusection">
+    <section class="keyempedusection">
       <div class="maintitle">
-        <h2>Education History</h2>
+        <h1>Education History</h1>
       </div>
 
+    <div id="educationhidden">
       <!----------------------------------------------------------------------------------------------------------->
       <!-- Education 1 - University -->
         <!-- Swimming teacher - title / date -->
@@ -272,7 +371,9 @@
         <!----------------------------------------------------------------------------------------------------------->
       <!-- Education 3 - Other -->
         <!-- Other - title -->
+        <div class="empeducontainer">   
         <div class="empedutitle"><h2>Other</h2></div>
+      </div>
         <!-- Other - bullet points -->
         <div class="empedupoints">
           <ul>
@@ -282,12 +383,16 @@
           </ul>
         </div>
       </div>
+    </div>
     </section>
+
+  </div>
 
     <!----------------------------------------------------------------------------------------------------------->
     <!-- Footer -->
     <footer class="footer">
       <a href="#">Back to top</a>
+      <h6>Created by Oliver Shenton!</h6>
     </footer>
   </body>
 </html>

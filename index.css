@@ -1,8 +1,210 @@
+/* ------------------------------------------------------------------------------------------------------- */
+/* HTML */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ------------------------------------------------------------------------------------------------------- */
+/* Body */
 body {
   color: rgb(0, 0, 0);
-  max-width: 1200px;
-  margin: auto;
+  max-width: max-content;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
 }
+
+/* ------------------------------------------------------------------------------------------------------- */
+/* Header */
+header {
+  position: fixed;
+  background-image: linear-gradient(#eef3f7, white, white, white, #eef3f7);
+  width: 100vw;
+  top: 0;
+}
+
+.heacontainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 1em;
+  margin-top: 1em;
+}
+
+.heaconname {
+  font-size: 30px;
+  font-weight: bold;
+  color: #182153;
+  margin-left: 1vw;
+}
+
+.heaconnavigation {
+  text-align: right;
+  margin-right: 1vw;
+}
+
+.heaconnavigation a {
+  color: #182153;
+  margin: auto;
+  padding: 15px;
+  margin-right: 30px;
+  text-decoration: none;
+  font-size: 20px;
+  font-style: sans-serif;
+}
+
+.heaconnavigation a:hover {
+  background-color: #182153;
+  border-radius: 25px;
+  color: #ffffff;
+}
+
+/* ------------------------------------------------------------------------------------------------------- */
+/* Sections */
+#sectionpicturedetails {
+  background-image: url('Pictures/Background.jpg');
+  padding: 1em;
+}
+
+/* Introduction section */
+#sectionstart {
+  background-color: #f0f0f0;
+  padding: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Experience to skills section */
+#sectionmiddle {
+  scroll-margin-top: 6rem;
+  background-color: white;
+}
+
+/* Contact section */
+#sectionend {
+  scroll-margin-top: 6rem;
+  background-color: #f0f0f0;
+  padding: 5em;
+  text-align: center;
+}
+
+.sectitle {
+  color: #182153;
+  padding: 1em;
+  text-align: center;
+}
+
+/* ------------------------------------------------------------------------------------------------------- */
+/* Section 1 - Picture + Details */
+
+.seccard {
+  background-color: white;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+
+.seccargrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.secgridetails {
+  border: 5px;
+  border-color: #182153;
+}
+
+.seccargrigap {
+  margin-top: 1em;
+}
+
+.seccargrigaplast {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.downloadbutton {
+  background-color: #eef3f7;
+  padding: 15px;
+  border-radius: 20px;
+}
+
+.downloadbutton:hover {
+  background-color: royalblue;
+  color: white;
+}
+
+.seccaricoborder {
+  padding: 0.1em;
+  background-color: white;
+}
+
+.seccardicons {
+  background-color: #182153;
+  text-align: center;
+  padding: 1em;
+}
+
+.seccardicons a {
+  padding: 0.3em;
+}
+
+/* ------------------------------------------------------------------------------------------------------- */
+/* Section 2 - - Introduction */
+
+.secintmiddle {
+  text-align: center;
+}
+
+.secintmidtext {
+  margin-bottom: 1em;
+}
+
+/* ------------------------------------------------------------------------------------------------------- */
+/* Section 3 - Experience History */
+.secexpdetcontainer {
+  padding: 1em;
+  display: grid;
+  grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr 1fr;
+  align-content: center;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+.secexpdetconrow {
+  display: inline-block;
+}
+
+.secexpdetconrowjob {
+  border-radius: 2px;
+  border: 1px #182153;
+  border-style: solid;
+  background-color: #f0f0f0;
+  padding: 1em;
+  border-radius: 2px;
+}
+
+.secexpdetconrowmiddle {
+  padding: 1em;
+  background-color: #ffffff;
+}
+
+/* ------------------------------------------------------------------------------------------------------- */
+/* Section 4 - Education History */
+
+/* ------------------------------------------------------------------------------------------------------- */
+/* Section 5 - Skills */
+
+/* ------------------------------------------------------------------------------------------------------- */
+/* Section 6 - Contact */
+
+/* ------------------------------------------------------------------------------------------------------- */
+/* Section 4 - Education History */
+
+/* ------------------------------------------------------------------------------------------------------- */
+/* Section 4 - Skills */
 
 .hr1 {
   border: 0;
@@ -18,14 +220,66 @@ body {
   );
 }
 
+.hr2 {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(
+    left,
+    whitesmoke,
+    #ffc000,
+    whitesmoke,
+    #ffc000,
+    whitesmoke
+  );
+  background-image: -o-linear-gradient(
+    left,
+    whitesmoke,
+    #ffc000,
+    whitesmoke,
+    #ffc000,
+    whitesmoke
+  );
+  background-image: -moz-linear-gradient(
+    left,
+    whitesmoke,
+    #ffc000,
+    whitesmoke,
+    #ffc000,
+    whitesmoke
+  );
+  background-image: -webkit-linear-gradient(
+    left,
+    whitesmoke,
+    #ffc000,
+    whitesmoke,
+    #ffc000,
+    whitesmoke
+  );
+}
+
+.hr2:after {
+  content: '§';
+  /* Controls the position of the logo */
+  left: 50%;
+  position: absolute;
+  transform: translateY(-50%) translateX(-50%);
+  /* Controls the whitespace around the symbol */
+  padding: 20px;
+  background: #ffffff00;
+  color: #ffc000;
+}
+
 /* ------------------------------------------------------------------------------------------------------- */
 /* Header name */
 
-.heacontainer {
+/* .heacontainer {
   display: grid;
   grid-template: auto / auto auto;
   padding: 10px 10px 0px 10px;
-}
+  position: fixed;
+  background-color: whitesmoke;
+  height: auto;
+} */
 
 .heaname {
   font-family: sans-serif;
@@ -34,7 +288,7 @@ body {
   margin-top: 20px;
 }
 
-.button {
+.heabutton {
   float: right;
   background-color: f5f5f5;
   padding: 15px;
@@ -43,13 +297,13 @@ body {
   border-radius: 20px;
 }
 
-.button:hover {
+.heabutton:hover {
   background-color: royalblue;
 }
 
 /* ------------------------------------------------------------------------------------------------------- */
 /* Navigation bar */
-.navigationbar {
+/* .navigationbar {
   border: 0;
   height: 40px;
   position: sticky;
@@ -68,6 +322,7 @@ body {
   font-size: 20px;
   font-style: sans-serif;
 }
+*/
 
 /* ------------------------------------------------------------------------------------------------------- */
 /* About me button */
@@ -78,22 +333,15 @@ body {
 }
 
 /* ------------------------------------------------------------------------------------------------------- */
-/* Introduction section */
-.introduction {
+/* Picture section */
+.picturesection {
   font-family: sans-serif;
-  background-color: #f5f5f5;
   border-radius: 20px;
-  margin-top: 30px;
+  margin-top: 25px;
   margin-left: 20px;
   margin-right: 20px;
-  border-style: dotted;
-  border-color: #ffc000;
-}
-
-.intintrocontainer {
-  display: inline-grid;
-  grid-template-columns: 100px 100px;
-  grid-gap: 3px;
+  margin-bottom: 25px;
+  justify-content: center;
 }
 
 .intpicture {
@@ -102,17 +350,13 @@ body {
 }
 
 /* ------------------------------------------------------------------------------------------------------- */
-/* Key skills section */
-.keyskills {
-  font-family: sans-serif;
-  background-color: #f5f5f5;
-  border-radius: 20px;
-  margin-top: 30px;
-  margin-left: 20px;
-  margin-right: 20px;
-  border-style: dotted;
-  border-color: #ffc000;
+/* Intro section */
+.introsection {
+  text-align: center;
 }
+
+/* ------------------------------------------------------------------------------------------------------- */
+/* Key skills section */
 
 .keycolumnscontainer {
   display: grid;
@@ -126,7 +370,7 @@ body {
 
 /* ------------------------------------------------------------------------------------------------------- */
 /* Education and Employment section */
-.empedusection {
+.keyempedusection {
   font-family: sans-serif;
   background-color: #f5f5f5;
   border-radius: 20px;
@@ -137,14 +381,9 @@ body {
   border-color: #ffc000;
 }
 
-.seccontainer {
-  display: grid;
-  grid-template: auto/auto auto;
-}
-
 /* Education and Employment title */
 .maintitle {
-  font-size: 20pt;
+  font-size: 150%;
   text-align: center;
   text-decoration: underline;
 }
@@ -152,14 +391,15 @@ body {
 /* ------------------------------------------------------------------------------------------------------- */
 /* Education and Employment container */
 .empeducontainer {
-  display: grid;
-  grid-template: auto/ auto auto;
+  display: flex;
+  grid-template: auto / auto auto;
 }
 
 /* Education and Employment title */
 .empedutitle {
   margin-left: 25px;
   font-size: 120%;
+  line-height: 0px;
 }
 
 /* Education and Employment date */
@@ -174,7 +414,7 @@ body {
   margin-left: 25px;
   font-size: 90%;
   font-style: italic;
-  line-height: 0.15;
+  line-height: 1px;
 }
 
 /* Education and Employment bullet points */
@@ -190,6 +430,6 @@ body {
   font-family: sans-serif;
   border-radius: 20px;
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   text-align: center;
 }
