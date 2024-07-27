@@ -1,21 +1,25 @@
 'use strict';
 
 // -------------------------------------------------------------------------------------------------------
-// Hide buttons
-function employmentHideClick() {
-  let empHide = document.getElementById('employmenthidden');
-  if (empHide.style.display === 'none') {
-    empHide.style.display = 'block';
-  } else {
-    empHide.style.display = 'none';
-  }
-}
+// Anchor Scrolling
+// Get the header element
+let header = document.querySelector('header');
 
-function educationHideClick() {
-  let eduHide = document.getElementById('educationhidden');
-  if (eduHide.style.display === 'none') {
-    eduHide.style.display = 'block';
-  } else {
-    eduHide.style.display = 'none';
-  }
-}
+// Get the height of the header
+let headerHeight = header.offsetHeight;
+document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
+  anchor.addEventListener('click', function (event) {
+    event.preventDefault();
+
+    // Get the target element that
+    // the anchor link points to
+    let target = document.querySelector(this.getAttribute('href'));
+
+    let targetPosition = target.getBoundingClientRect().top - headerHeight;
+
+    window.scrollTo({
+      top: targetPosition + window.scrollY,
+      behavior: 'smooth',
+    });
+  });
+});
