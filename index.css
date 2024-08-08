@@ -277,6 +277,10 @@ body {
 /* ------------------------------------------------------------------------------------------------------- */
 /* Section 3 - Skills */
 
+#section_skills {
+  scroll-margin-top: 1rem;
+}
+
 .secskillscontainer {
   display: grid;
   grid-template-columns: repeat(3);
@@ -342,6 +346,10 @@ body {
   .header_name {
     font-size: 1.5rem;
   }
+
+  #header_dropdown {
+    display: none;
+  }
 }
 
 /* ------------------------------------------------------------------------------------------------------- */
@@ -349,6 +357,10 @@ body {
 @media (min-width: 576px) {
   .header_name {
     font-size: 2rem;
+  }
+
+  #header_dropdown {
+    display: none;
   }
 }
 
@@ -358,6 +370,10 @@ body {
   .header_name {
     font-size: 2.5rem;
   }
+
+  #header_dropdown {
+    display: none;
+  }
 }
 
 /* ------------------------------------------------------------------------------------------------------- */
@@ -366,6 +382,10 @@ body {
   .header_name {
     font-size: 2.5rem;
   }
+
+  #header_dropdown {
+    display: none;
+  }
 }
 
 /* ------------------------------------------------------------------------------------------------------- */
@@ -373,6 +393,10 @@ body {
 @media (min-width: 1200px) {
   .header_name {
     font-size: 2.5rem;
+  }
+
+  #header_dropdown {
+    display: none;
   }
 }
 
@@ -383,9 +407,9 @@ body {
     font-size: 2.5rem;
   }
 
-  /* #header_dropdown {
+  #header_dropdown {
     display: none;
-  } */
+  }
 }
 
 /* ------------------------------------------------------------------------------------------------------- */
