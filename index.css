@@ -277,6 +277,10 @@ body {
 /* ------------------------------------------------------------------------------------------------------- */
 /* Section 3 - Skills */
 
+#section_skills{
+scroll-margin-top: 1rem;
+}
+
 .secskillscontainer {
   display: grid;
   grid-template-columns: repeat(3);
