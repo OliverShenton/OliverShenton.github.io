@@ -1,25 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!----------------------------------------------------------------------------------------------------------->
+  <!-- ------------------------------------------------------------------------------------------------------- -->
 
+  <!-- Head -->
   <head>
-    <!-- Defines the encoding of the website -->
     <meta charset="utf-8" />
-    <!-- Viewport related to mobile responsiveness + uses device physical width + initial zoom (1 = no zoom) -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- Link to external CSS file -->
     <link rel="stylesheet" href="index.css" />
-    <!-- Link to JS file -->
     <script src="index.js"></script>
-    <!-- Documents title -->
     <title>Oliver Shenton's CV</title>
-    <!-- Short decription of the document -->
     <meta name="Oliver Shenton" content="Author" />
     <meta
       name="Description"
       content="Oliver Shenton's CV in the form of a website"
     />
-    <!-- Theme colour -->
     <meta name="theme-color" content="#F5F5F5" />
   </head>
 
@@ -42,294 +36,389 @@
         </nav>
       </div>
       <button id="header_dropdown" type="menu">
-        <img src="Pictures/Menu - Down Arrow.png" />
+        <img src="Pictures/Menu - Down Arrow.png" id="header_dropdown" />
       </button>
     </header>
 
     <!----------------------------------------------------------------------------------------------------------->
 
+    <!-- Spacer -->
+    <div class="spacer_header"></div>
+
+    <!----------------------------------------------------------------------------------------------------------->
+
     <!-- Section 1 - Picture + Details -->
-    <section>
+    <section id="section_profile">
       <div class="profile_card">
         <div class="profile_picture">
           <img
             src="Pictures/Profile Picture.png"
             style="
-              width: 100%;
-              height: 100%;
-              border-radius: 15px 0px 0px 0px;
-              object-fit: contain;
+              max-width: 100%;
+              max-height: 100%;
+              border-radius: 15px;
+              border: 3px solid black;
             "
-            alt="Oliver Shenton Profile Picture"
+            alt="Oliver Shenton Profile
+          Picture"
           />
         </div>
-        <div class="profile_details">
-          <div class="profile_details_title"><h1>Oliver Shenton</h1></div>
-          <div class="profile_details_info">(Require 2 months notice)</div>
-          <div class="profile_details_title"><h4>Phone:</h4></div>
-          <div class="profile_details_info">(+447473826355)</div>
-          <div class="profile_details_title"><h4>Email:</h4></div>
-          <div class="profile_details_info">olivermshenton@hotmail.com</div>
-          <div class="profile_details_title"><h4>Address:</h4></div>
-          <div class="profile_details_info">Sandbach, Cheshire, CW11</div>
-          <div class="profile_download">
-            <a href="CV/Oliver Shenton CV.docx" download="" title="Download CV">
-              <button class="profile_download_button" type="button">
-                Download CV
-              </button>
-            </a>
+        <div class="profile_title"><h1>Oliver Shenton</h1></div>
+        <div class="profile_job">Software Developer</div>
+        <div class="details_notice">
+          <div>
+            <img
+              src="Pictures/Icon - Calendar.png"
+              style="max-width: 25px; max-height: 25px"
+            />
           </div>
+          <div>Require 2 months notice</div>
         </div>
-        <div class="profile_icons">
-          <nav>
-            <a href="http://linkedin.com/in/olivershenton/" target="_blank"
-              ><img src="Pictures\LinkedIn - Icon.png" title="LinkedIn"
-            /></a>
-            <a href="mailto: olivermshenton@hotmail.com" title="Email"
-              ><img src="Pictures\Email - Icon.png" title="Email"
-            /></a>
-            <a href="https://github.com/OliverShenton" target="_blank"
-              ><img src="Pictures\GitHub - Icon.png" title="GitHub"
-            /></a>
-          </nav>
+        <div class="details_phone">
+          <div>
+            <img
+              src="Pictures/Icon - Phone.png"
+              style="max-width: 25px; max-height: 25px"
+            />
+          </div>
+          <div>+447473826355</div>
         </div>
-      </div>
-    </section>
-
-    <!----------------------------------------------------------------------------------------------------------->
-    <!-- Section 2 - Introduction -->
-
-    <section id="section_intro">
-      <div class="intro_title"><h1>Hello, I am Oliver</h1></div>
-      <div class="intro_text">
-        I am a dedicated DNA Analyst with three years of experience within the
-        field of forensic sciences. I have honed my analytical skills and
-        attention to detail through rigorous scientific process and data
-        interpretation. Currently, I am expanding my expertise by learning HTML,
-        CSS, and JavaScript, using a diverse range of resources, and my passion
-        for programming and web development. I am eager to leverage these skills
-        in a new career as a developer, where I can contribute to innovate
-        projects and continuous technological advancements.
-      </div>
-    </section>
-
-    <!----------------------------------------------------------------------------------------------------------->
-    <!-- Section 3 - Skills -->
-    <section id="section_middle">
-      <div class="middle_title">Skills</div>
-
-      <hr class="hr1" />
-
-      <div class="secskillscontainer">
-        <div class="secskicon1">
-          <ul>
-            <li>Skill 1</li>
-            <li>Skill 2</li>
-            <li>Skill 3</li>
-          </ul>
-        </div>
-        <div class="secskicon2">
-          <ul>
-            <li>Skill 4</li>
-            <li>Skill 5</li>
-            <li>Skill 6</li>
-          </ul>
-        </div>
-      </div>
-      <hr class="hr1" />
-    </section>
-
-    <!----------------------------------------------------------------------------------------------------------->
-    <!-- Section 4 - Experience History -->
-    <section id="section_middle">
-      <div id="section_middle_experience"></div>
-      <div class="middle_title">Experience</div>
-      <hr class="hr1">
-
-      <!-- Experience 1 -->
-      <div class="middle_container">
-        <div class="middle_1">
-          <div>07/2021 - Present</div>
-          <div><h3>Experienced DNA Analyst</h3></div>
-        </div>
-        <div class="middle_3">
-          <div class="middle3_1">
-            <a
-              href="https://www.eurofins.co.uk/forensic-services/"
-              target="_blank"
-              >Eurofins Forensics Science</a
+        <div class="details_email">
+          <div>
+            <img
+              src="Pictures/Icon - Email.png"
+              style="max-width: 25px; max-height: 25px"
+            />
+          </div>
+          <div>
+            <a href="mailto:olivermshenton@hotmail.com"
+              >olivermshenton@hotmail.com</a
             >
           </div>
-            <div><ul>
-              <li></li>
-            </ul></div>
-      </div>
-      </div>
-
-      <!-- Experience 2 -->
-      <div class="middle_container">
-        <div class="middle_1">
-          <div>04/2019 - 08/2022</div>
-          <div><h3>Bar Team Member</h3></div>
         </div>
-        <div class="middle_3">
-          <div class="middle3_1">
-            <div><a
-              href="https://www.brunningandprice.co.uk/oldhall/"
-              target="_blank"
-                >The Old Hall</a
-              >, Brunning & Price</div>
-            <div>
-              <a class="new_line"
-            href="https://www.slugandlettuce.co.uk/newcastle-under-lyme"
+        <div class="details_location">
+          <div>
+            <img
+              src="Pictures/Icon - Location Pin.png"
+              style="max-width: 25px; max-height: 25px"
+            />
+          </div>
+          <div>Sandbach, Cheshire, CW11</div>
+        </div>
+        <div class="details_skills"></div>
+        <div class="details_icons">
+          <a href="http://linkedin.com/in/olivershenton/" target="_blank"
+            ><img src="Pictures\LinkedIn - Icon.png" title="LinkedIn"
+          /></a>
+          <a href="mailto: olivermshenton@hotmail.com" title="Email"
+            ><img src="Pictures\Email - Icon.png" title="Email"
+          /></a>
+          <a href="https://github.com/OliverShenton" target="_blank"
+            ><img src="Pictures\GitHub - Icon.png" title="GitHub"
+          /></a>
+        </div>
+        <div class="profile_availability">
+          <div>
+            <!-- <img
+              src="Pictures/Icon - Red Circle.png"
+              style="max-width: 15px; max-height: 15px"
+            /> -->
+            <img
+              src="Pictures/Icon - Green Circle.png"
+              style="max-width: 15px; max-height: 15px"
+            />
+          </div>
+          <!-- <div id="profile_availability" style="color: red">Not looking for jobs</div> -->
+          <div id="profile_availability" style="color: green">
+            Looking for jobs
+          </div>
+        </div>
+        <div class="profile_download">
+          <a href="CV/Oliver Shenton CV.docx" download="" title="Download CV">
+            <button class="profile_download_button" type="button">
+              Download CV
+            </button>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!----------------------------------------------------------------------------------------------------------->
+
+    <!-- Body Section -->
+    <section id="body_section">
+      <!----------------------------------------------------------------------------------------------------------->
+      <!-- Section 2 - Introduction -->
+
+      <section id="section_intro">
+        <div class="intro_title"><h1>Hello, I am Oliver</h1></div>
+        <div class="intro_text">
+          I am a dedicated professional with three years of experience as a DNA
+          Analyst within the field of forensic sciences. My career has been
+          defined by a strong analytical mindset, meticulous attention to
+          detail, and a commitment to rigorous scientific processes. Recently, I
+          have expanded my expertise by diving into web development, mastering
+          HTML, CSS, and JavaScript through a diverse array of resources. I am
+          passionate about leveraging my programming skills and scientific
+          acumen to embark on a new career as a developer. My goal is to
+          contribute to innovative projects and drive continuous technological
+          advancements, blending my analytical background with my newfound
+          coding capabilities.
+        </div>
+      </section>
+
+      <!----------------------------------------------------------------------------------------------------------->
+      <!-- Section 3 - Skills -->
+      <section id="section_skills" class="section_middle">
+        <div class="middle_title">Skills</div>
+
+        <hr class="hr1" />
+
+        <div class="secskillscontainer">
+          <div class="secskicon1">
+            <ul>
+              <li>Skill 1</li>
+              <li>Skill 2</li>
+              <li>Skill 3</li>
+            </ul>
+          </div>
+          <div class="secskicon2">
+            <ul>
+              <li>Skill 4</li>
+              <li>Skill 5</li>
+              <li>Skill 6</li>
+            </ul>
+          </div>
+        </div>
+        <hr class="hr1" />
+      </section>
+
+      <!----------------------------------------------------------------------------------------------------------->
+      <!-- Section 4 - Experience History -->
+      <section id="section_middle_experience" class="section_middle">
+        <div class="middle_title">Experience</div>
+        <hr class="hr1" />
+
+        <!-- Experience 1 -->
+        <div class="middle_container">
+          <div class="middle_1">
+            <div>07/2021 - Present</div>
+            <div><h3>Experienced DNA Analyst</h3></div>
+          </div>
+          <div class="middle_2">
+            <img src="Pictures/Icon - Diamond.png" />
+          </div>
+          <div class="middle_3">
+            <div class="middle3_1">
+              <a
+                href="https://www.eurofins.co.uk/forensic-services/"
                 target="_blank"
-              >The Kiln</a
-            >, Stonegate Group</div>
-          </div><ul>
-              <li></li>
-            </ul></div>
-      </div>
-
-      <!-- Experience 3 -->
-      <div class="middle_container">
-        <div class="middle_1">
-          <div>06/2019 - 09/2019</div>
-          <div><h3>Vocational Placement</h3></div>
-        </div>
-        <div class="middle_3">
-          <div class="middle3_1">
-            <a href="https://www.christie.nhs.uk/" target="_blank"
-              >The Christies NHS Foundation Trust</a
-            >
-          </div>
-            <div><ul>
-              <li></li>
-            </ul></div>
-      </div>
-      </div>
-
-      <!-- Experience 4 -->
-      <div class="middle_container">
-        <div class="middle_1">
-          <div>04/2014 - 09/2019</div>
-          <div><h3>Level 1 Swimming Teacher</h3></div>
-        </div>
-        <div class="middle_3">
-          <div class="middle3_1">
-            <a href="https://www.sandbachsharks.co.uk/" target="_blank"
-              >Sandbach Sharks Amateur Swimming Club</a
-            >
-          </div>
-            <div><ul>
-              <li></li>
-            </ul></div>
-      </div>
-      </div>
-      <hr class="hr1" />
-    </section>
-
-    <!----------------------------------------------------------------------------------------------------------->
-    <!-- Section 5 - Education History -->
-    <section id="section_middle">
-      <div id="section_middle_education"></div>
-      <div class="middle_title">Education</div>
-      <hr class="hr1">
-
-      <!-- Education 1 -->
-      <div class="middle_container">
-        <div class="middle_1">
-          <div>2022 - Present</div>
-          <div><h3>HTML, CSS, and JavaScript Developer</h3></div>
-        </div>
-        <div class="middle_3">
-          <div> Udemy </div>
-            <div><a
-              href="https://www.udemy.com/course/the-complete-javascript-course/"
-              target="_blank"
-              >"The Complete JavaScript Course 2023: From Zero to Expert!"</a
-            ></div>
-            <a
-              href="https://www.udemy.com/course/the-complete-sql-bootcamp/"
-              target="_blank"
-              >"The Complete SQL bootcamp: Go From Zero to Hero"</a
-            > - Completed (October 2023) <a
-              href="Pictures\The Complete SQL Bootcamp Go from Zero to Hero - Certificate.jpg"
-              download=""
-              >Certificate</a
-            >
-            <div class="middle3_2">
-              <div><ul>
+                >Eurofins Forensics Science</a
+              >
+            </div>
+            <div>
+              <ul>
                 <li></li>
-              </ul></div>
+              </ul>
+            </div>
           </div>
         </div>
-          </div>
 
-      <!-- Education 2 -->
-      <div class="middle_container">
-        <div class="middle_1">
-          <div>2016 - 2020</div>
-          <div><h3>Forensic Science - Bachelor of Science</h3></div>
-        </div>
-        <div class="middle_3">
-          <div class="middle3_1">
-            Keele University
+        <!-- Experience 2 -->
+        <div class="middle_container">
+          <div class="middle_1">
+            <div>04/2019 - 08/2022</div>
+            <div><h3>Bar Team Member</h3></div>
           </div>
-          <div class="middle3_2">
-            <div><ul>
-              <li>Bachelor of Science (BSc) hons: Forensic Science.</li>
-              <li>Second class honours.</li>
-            </ul></div>
-        </div>
-      </div>
-      </div>
-
-      <!-- Education 3 -->
-      <div class="middle_container">
-        <div class="middle_1">
-          <div>2009 - 2016</div>
-          <div><h3>A Level / GCSE</h3></div>
-        </div>
-        <div class="middle_3">
-          <div class="middle3_1">
-            Sandbach School
+          <div class="middle_2">
+            <img src="Pictures/Icon - Diamond.png" />
           </div>
-          <div class="middle3_2">
-            <div><ul>
-              <li>A-Levels: Geography (B), History(C), Biology(C).</li>
-              <li>10 GCSE's: 5 A's and 5 B's.</li>
-              <li>A in Maths and English.</li>
-            </ul></div>
-        </div>
-      </div>
-      </div>
-
-      <!-- Education 4 -->
-      <div class="middle_container">
-        <div class="middle_1">
-          <div><h3>Other</h3></div>
-        </div>
-        <div class="middle_3">
-          <div class="middle3_1">
+          <div class="middle_3">
+            <div class="middle3_1">
+              <div>
+                <a
+                  href="https://www.brunningandprice.co.uk/oldhall/"
+                  target="_blank"
+                  >The Old Hall</a
+                >, Brunning & Price
+              </div>
+              <div>
+                <a
+                  class="new_line"
+                  href="https://www.slugandlettuce.co.uk/newcastle-under-lyme"
+                  target="_blank"
+                  >The Kiln</a
+                >, Stonegate Group
+              </div>
+            </div>
+            <ul>
+              <li></li>
+            </ul>
           </div>
-          <div class="middle3_2">
-            <div><ul>
-              <li>Full UK driving license.</li>
-              <li>Level 1 Swimming Teacher Qualification.</li>
-              <li>Black belt - Karate, Kickboxing, and Brazilian Jiu Jitsu.</li>
-            </ul></div>
         </div>
-      </div>
-      </div>
 
-      <hr class="hr1" />
-      
+        <!-- Experience 3 -->
+        <div class="middle_container">
+          <div class="middle_1">
+            <div>06/2019 - 09/2019</div>
+            <div><h3>Vocational Placement</h3></div>
+          </div>
+          <div class="middle_2">
+            <img src="Pictures/Icon - Diamond.png" />
+          </div>
+          <div class="middle_3">
+            <div class="middle3_1">
+              <a href="https://www.christie.nhs.uk/" target="_blank"
+                >The Christies NHS Foundation Trust</a
+              >
+            </div>
+            <div>
+              <ul>
+                <li></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience 4 -->
+        <div class="middle_container">
+          <div class="middle_1">
+            <div>04/2014 - 09/2019</div>
+            <div><h3>Level 1 Swimming Teacher</h3></div>
+          </div>
+          <div class="middle_2"><img src="Pictures/Icon - Diamond.png" /></div>
+          <div class="middle_3">
+            <div class="middle3_1">
+              <a href="https://www.sandbachsharks.co.uk/" target="_blank"
+                >Sandbach Sharks Amateur Swimming Club</a
+              >
+            </div>
+            <div>
+              <ul>
+                <li></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <hr class="hr1" />
+      </section>
+
+      <!----------------------------------------------------------------------------------------------------------->
+      <!-- Section 5 - Education History -->
+      <section id="section_middle_education" class="section_middle">
+        <div class="middle_title">Education</div>
+        <hr class="hr1" />
+
+        <!-- Education 1 -->
+        <div class="middle_container">
+          <div class="middle_1">
+            <div>2022 - Present</div>
+            <div><h3>HTML, CSS, and JavaScript Developer</h3></div>
+          </div>
+          <div class="middle_2"><img src="Pictures/Icon - Diamond.png" /></div>
+          <div class="middle_3">
+            <div>Udemy</div>
+            <div class="middle3_2">
+              <div>
+                <ul>
+                  <li>
+                    <a
+                      href="https://www.udemy.com/course/the-complete-javascript-course/"
+                      target="_blank"
+                      >"The Complete JavaScript Course 2023: From Zero to
+                      Expert!"</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.udemy.com/course/the-complete-sql-bootcamp/"
+                      target="_blank"
+                      >"The Complete SQL bootcamp: Go From Zero to Hero"</a
+                    >
+                    - Completed (October 2023)
+                    <a
+                      href="Pictures\The Complete SQL Bootcamp Go from Zero to Hero - Certificate.jpg"
+                      download=""
+                      >Certificate</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Education 2 -->
+        <div class="middle_container">
+          <div class="middle_1">
+            <div>2016 - 2020</div>
+            <div><h3>Forensic Science - Bachelor of Science</h3></div>
+          </div>
+          <div class="middle_2"><img src="Pictures/Icon - Diamond.png" /></div>
+          <div class="middle_3">
+            <div class="middle3_1">Keele University</div>
+            <div class="middle3_2">
+              <div>
+                <ul>
+                  <li>Bachelor of Science (BSc) hons: Forensic Science.</li>
+                  <li>Second class honours.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Education 3 -->
+        <div class="middle_container">
+          <div class="middle_1">
+            <div>2009 - 2016</div>
+            <div><h3>A Level / GCSE</h3></div>
+          </div>
+          <div class="middle_2"><img src="Pictures/Icon - Diamond.png" /></div>
+          <div class="middle_3">
+            <div class="middle3_1">Sandbach School</div>
+            <div class="middle3_2">
+              <div>
+                <ul>
+                  <li>A-Levels: Geography (B), History(C), Biology(C).</li>
+                  <li>10 GCSE's: 5 A's and 5 B's.</li>
+                  <li>A in Maths and English.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Education 4 -->
+        <div class="middle_container">
+          <div class="middle_1">
+            <div><h3>Other</h3></div>
+          </div>
+          <div class="middle_2">
+            <img src="Pictures/Icon - Diamond.png" />
+          </div>
+          <div class="middle_3">
+            <div class="middle3_1"></div>
+            <div class="middle3_2">
+              <div>
+                <ul>
+                  <li>Full UK driving license.</li>
+                  <li>Level 1 Swimming Teacher Qualification.</li>
+                  <li>
+                    Black belt - Karate, Kickboxing, and Brazilian Jiu Jitsu.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </section>
 
     <!----------------------------------------------------------------------------------------------------------->
     <!-- Footer -->
     <footer class="footer">
-      <div class="footer_text">
+      <div class="footer_text"></div>
       <a href="#">Back to top</a>
       <h6>Created by Oliver Shenton!</h6>
     </footer>
