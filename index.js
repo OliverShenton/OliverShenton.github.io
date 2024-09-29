@@ -1,4 +1,15 @@
-// 'use strict';
+let acc = document.querySelectorAll('.accordion');
 
-// Change Availability colour
-document.getElementById('profile_availability').style.color = 'red';
+acc.forEach(button => {
+  button.addEventListener('click', function () {
+    this.classList.toggle('active');
+
+    let panel = this.nextElementSibling;
+
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + 'px';
+    }
+  });
+});

@@ -1,425 +1,173 @@
-/* ------------------------------------------------------------------------------------------------------- */
-/* HTML */
 html {
   scroll-behavior: smooth;
-  font-size: 100%;
-  font-style: sans-serif;
+  font-family: sans-serif;
 }
 
-/* ------------------------------------------------------------------------------------------------------- */
-/* Header */
 header {
   position: fixed;
   width: 100%;
+  margin: 0;
   top: 0;
-  z-index: 1;
-}
-
-.header_container {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  background-image: linear-gradient(#eef3f7, white, white, white, #eef3f7);
-  padding: 1rem;
-}
-
-.header_name {
-  font-weight: bold;
-  color: #000080;
-  padding: 1rem;
-}
-
-.header_nav {
-  display: flex;
-  margin-left: auto;
-  align-items: center;
-}
-
-.header_nav:hover a {
-  opacity: 0.8;
-  filter: blur(1.25px);
-}
-
-.header_nav a {
-  text-decoration: none;
-  font-size: 1.5rem;
-  margin-right: 1rem;
-  padding: 1rem;
-  color: #000080;
-  transition: 0.5s;
-}
-
-.header_nav a:hover {
-  opacity: 1;
-  filter: blur(0px);
-  transition: 0.3s;
-  transform: scale(1.1);
-  text-shadow: none;
-  text-decoration: underline;
-}
-
-/* ------------------------------------------------------------------------------------------------------- */
-/* Spacer - Header */
-.spacer_header {
-  margin-top: 112px;
-}
-
-/* ------------------------------------------------------------------------------------------------------- */
-/* Body */
-body {
-  color: rgb(0, 0, 0);
-  max-width: 100%;
-  margin: 0;
-  background-image: url('Pictures/Background.jpg');
-  background-attachment: fixed;
-}
-
-.hr1 {
-  border: 0;
-  height: 1px;
-  background-image: linear-gradient(left, whitesmoke, #d3d3d3, whitesmoke);
-  background-image: -o-linear-gradient(left, whitesmoke, #d3d3d3, whitesmoke);
-  background-image: -moz-linear-gradient(left, whitesmoke, #d3d3d3, whitesmoke);
-  background-image: -webkit-linear-gradient(
-    left,
-    whitesmoke,
-    #d3d3d3,
-    whitesmoke
-  );
-}
-
-/* ------------------------------------------------------------------------------------------------------- */
-/* Section 1 - Picture + Details */
-
-#section_profile {
-  display: flex;
-  justify-content: center;
-}
-
-.profile_card {
-  margin: 5% 25%;
-  display: grid;
-  grid-template-columns: repeat(20, minmax(0, 0.1fr));
-  grid-template-rows: repeat(20, minmax(0, 0.1fr));
-  background-color: #dadbdd;
-  border-radius: 15px;
-  padding: 1%;
-  border: 5px #d8d8dd solid;
-}
-
-.profile_picture {
-  grid-column: 1 / 8;
-  grid-row: 1 / 21;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-}
-
-.profile_title {
-  grid-column: 9 / 15;
-  grid-row: 2 / 4;
-  display: flex;
-  align-items: center;
-  font-size: 120%;
-}
-
-.profile_job {
-  grid-column: 9 / 15;
-  grid-row: 4;
-  display: flex;
-  align-items: top;
-}
-
-.details_notice {
-  grid-column: 9 / 14;
-  grid-row: 6 / 8;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: start;
-  font-size: 0.9cqw;
-}
-
-.details_notice img {
-  margin-right: 5px;
-}
-
-.details_phone {
-  grid-column: 15 / 20;
-  grid-row: 6 / 8;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: start;
-  font-size: 0.9cqw;
-}
-
-.details_phone img {
-  margin-right: 5px;
-}
-
-.details_email {
-  grid-column: 9 / 14;
-  grid-row: 9 / 11;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: start;
-  font-size: 0.9cqw;
-}
-
-.details_email img {
-  margin-right: 5px;
-}
-
-.details_location {
-  grid-column: 15 / 20;
-  grid-row: 9 / 11;
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  font-size: 0.9cqw;
-}
-
-.details_location img {
-  margin-right: 5px;
-}
-
-.profile_availability {
-  grid-column: 15 /18;
-  grid-row: 1 / 3;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.profile_availability img {
-  margin-right: 5px;
-}
-
-.profile_download {
-  grid-column: 18 / 21;
-  grid-row: 1 / 3;
-  display: flex;
-  justify-content: right;
-  align-items: center;
-}
-
-.profile_download_button {
-  background-color: #1187ff;
-  padding: 15px;
-  border-radius: 5px;
-  font-size: 0.75cqw;
-  display: inline-block;
-  position: relative;
-}
-
-.profile_download_button:hover {
-  background-color: royalblue;
+  background-color: #002147;
   color: white;
 }
 
-.details_icons {
-  grid-column: 9 / 21;
-  grid-row: 17 / 21;
-  /* text-align: center;
-  padding: 1rem; */
-}
-.details_icons a {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  display: inline-block;
-  position: relative;
+body {
+  margin: 0;
+  padding: 0;
+  background-color: whitesmoke;
 }
 
-/* ------------------------------------------------------------------------------------------------------- */
-/* Section 1 - Picture + Details */
-
-#body_section {
-  background-color: white;
-}
-
-/* ------------------------------------------------------------------------------------------------------- */
-/* Section 2 - - Introduction */
-
-#section_intro {
-  width: 100%;
-  background-color: #d3d3d3;
-  float: auto;
-}
-
-.intro_title {
-  text-align: center;
-  padding-top: 1rem;
-}
-
-.intro_text {
-  margin-left: 30%;
-  margin-right: 30%;
-  padding-bottom: 2rem;
-}
-/* ------------------------------------------------------------------------------------------------------- */
-/* Section 3/4/5 - Sections + Titles */
-.section_middle {
-  width: 100%;
-  background-color: white;
-}
-
-.middle_title {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  padding: 1em;
-  color: #000080;
-  font-weight: bold;
-  font-size: 175%;
-}
-
-/* ------------------------------------------------------------------------------------------------------- */
-/* Section 3 - Skills */
-
-#section_skills {
-  scroll-margin-top: 1rem;
-}
-
-.secskillscontainer {
-  display: grid;
-  grid-template-columns: repeat(3);
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.secskillscontainer .secskicon1 {
-  margin: 0 auto;
-  grid-column: 1;
-}
-
-.secskillscontainer .secskicon2 {
-  margin: 0 auto;
-  grid-column: 2;
-}
-
-.secskillscontainer .secskicon3 {
-  margin: 0 auto;
-  grid-column: 3;
-}
-
-/* ------------------------------------------------------------------------------------------------------- */
-/* Section 4/5 - Experience History */
-
-.middle_container {
-  padding: 1em;
-  display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-  margin-left: 20%;
-  margin-right: 20%;
-}
-
-.middle_1 {
-  grid-column: 1 / span 2;
-  text-align: end;
-}
-
-.middle_2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.middle_3 {
-  grid-column: 4 / span 5;
-}
-
-/* ------------------------------------------------------------------------------------------------------- */
-/* Footer */
-.footer {
-  text-align: center;
-  background-color: #d3d3d3;
-}
-
-.footer_text {
-  font-size: 1rem;
-}
-
-/* ------------------------------------------------------------------------------------------------------- */
-/* Breakpoint Small Device */
 @media (max-width: 576px) {
-  .header_name {
-    font-size: 1.5rem;
+  .header_container {
+    display: flex;
+    align-items: center;
   }
 
-  #header_dropdown {
+  .header_container h2 {
+    flex: 1;
+    margin: 5% 0 5% 2.5%;
+  }
+
+  .navigation_dropdown {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5%;
+    align-items: center;
+  }
+
+  .dropdown_content {
     display: none;
   }
-}
+  /*  */
 
-/* ------------------------------------------------------------------------------------------------------- */
-/* Breakpoint Small Device */
-@media (min-width: 576px) {
-  .header_name {
-    font-size: 2rem;
+  .about_container {
+    margin: 150px 0 5%;
+    text-align: center;
   }
 
-  #header_dropdown {
+  .profile_picture {
+    border: solid 10px white;
+    border-radius: 100%;
+  }
+
+  .profile_text h1 {
+    margin-top: 50px;
+    line-height: 0;
+    font-size: 2.2rem;
+  }
+
+  .profile_text h3 {
+    line-height: 0;
+  }
+
+  .about_container p {
+    margin: 25px 5%;
+  }
+
+  .links {
+    margin-top: 10px;
+  }
+
+  .links iconify-icon {
+    font-size: 50px;
+    padding: 0 10px;
+    color: black;
+  }
+  .download_CV {
+    margin-top: 1rem;
+    background-color: lightgray;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    border: 1px solid #c3c3c3;
+    color: black;
+  }
+
+  /*  */
+
+  .experience_container h2,
+  .education_container h2 {
+    text-align: center;
+    padding: 1rem;
+    background-color: #b69ac3;
+    color: white;
+    margin-top: 25px;
+  }
+
+  .accordion_block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .accordion {
+    display: flex;
+    align-items: center;
+    background-color: #763e90;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 0 15px;
+    width: 85%;
+    text-align: left;
+    border: none;
+    outline: none;
+    margin-top: 10px;
+  }
+
+  .accordion h4 {
+    flex-grow: 1;
+  }
+
+  .accordion_up {
+    display: block;
+  }
+
+  .accordion_down {
     display: none;
   }
-}
 
-/* ------------------------------------------------------------------------------------------------------- */
-/* Breakpoint Medium Device */
-@media (min-width: 768px) {
-  .header_name {
-    font-size: 2.5rem;
+  .accordion_icon {
+    transition: transform 0.3s ease;
   }
 
-  #header_dropdown {
-    display: none;
-  }
-}
-
-/* ------------------------------------------------------------------------------------------------------- */
-/* Breakpoint Large Device */
-@media (min-width: 992px) {
-  .header_name {
-    font-size: 2.5rem;
+  .accordion.active .accordion_icon {
+    transform: rotate(180deg); /* Rotates the icon to show 'up' */
   }
 
-  #header_dropdown {
-    display: none;
-  }
-}
-
-/* ------------------------------------------------------------------------------------------------------- */
-/* Breakpoint Extra Large Device */
-@media (min-width: 1200px) {
-  .header_name {
-    font-size: 2.5rem;
+  .panel {
+    padding: 0 18px;
+    width: 70%;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
   }
 
-  #header_dropdown {
-    display: none;
-  }
-}
-
-/* ------------------------------------------------------------------------------------------------------- */
-/* Breakpoint Extra  Extra Large Device */
-@media (min-width: 1400px) {
-  .header_name {
-    font-size: 2.5rem;
+  .bullet_points,
+  .bullet_points li {
+    margin-bottom: 10px;
   }
 
-  #header_dropdown {
-    display: none;
-  }
-}
-
-/* ------------------------------------------------------------------------------------------------------- */
-/* Breakpoint Extra Extra Extra Large Device */
-@media (min-width: 1652px) {
-  .header_name {
-    font-size: 2.5rem;
+  .footer {
+    background-color: lightgray;
+    margin-top: 25px;
   }
 
-  #header_dropdown {
-    display: none;
+  @media (min-width: 576px) {
+  }
+
+  @media (min-width: 768px) {
+  }
+
+  @media (min-width: 992px) {
+  }
+
+  @media (min-width: 1200px) {
+  }
+
+  @media (min-width: 1400px) {
+  }
+
+  @media (min-width: 1652px) {
   }
 }
