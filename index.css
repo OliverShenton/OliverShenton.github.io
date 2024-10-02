@@ -22,11 +22,12 @@ body {
   .header_container {
     display: flex;
     align-items: center;
+margin: 5% 10% 5% 10%
   }
 
   .header_container h2 {
     flex: 1;
-    margin: 5% 10% 5% 10%;
+   // margin: 5% 10% 5% 10%;
   }
 
   .navigation_dropdown {
