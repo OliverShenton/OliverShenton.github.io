@@ -26,13 +26,13 @@ body {
 
   .header_container h2 {
     flex: 1;
-    margin: 5% 0 5% 2.5%;
+    margin: 5% 0 5% 10%;
   }
 
   .navigation_dropdown {
     display: flex;
     justify-content: flex-end;
-    margin-right: 5%;
+    margin-right: 10%;
     align-items: center;
   }
 
@@ -42,7 +42,7 @@ body {
   /*  */
 
   .about_container {
-    margin: 150px 0 5%;
+    margin: 150px 0 15%;
     text-align: center;
   }
 
