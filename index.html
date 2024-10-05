@@ -26,11 +26,14 @@
     <h2>Oliver Shenton</h2>
     <div class="navigation_dropdown">
       <button class="navigation_button" onclick="navigationMenu()">
-        <iconify-icon icon="f7:line-horizontal-3"></iconify-icon>
+        <iconify-icon
+          id="changeIcon"
+          icon="f7:line-horizontal-3"
+        ></iconify-icon>
       </button>
-      <div class="dropdown_content">
+      <div id="dropdown" class="dropdown_content">
         <a href="#portfolio.html">Portfolio</a>
-        <a href="#skills">Skills</a>
+        <a href="#about">About Me</a>
         <a href="#experience">Experience</a>
         <a href="#education">Education</a>
         <a href="#contact">Contact</a>
@@ -44,7 +47,7 @@
   <!--  -->
 
   <section>
-    <div class="about_container">
+    <div id="about" class="about_container" data-offset="200">
       <img
         class="profile_picture"
         src="/Pictures/Profile Picture - B&W.jpg"
@@ -66,21 +69,27 @@
         </p>
 
         <div class="links">
-          <a href="https://github.com/OliverShenton" title="Github"
+          <a
+            href="https://github.com/OliverShenton"
+            title="Github"
+            target="_blank"
             ><iconify-icon icon="ant-design:github-filled"></iconify-icon
           ></a>
-          <a href="https://www.linkedin.com/in/olivershenton/" title="LinkedIn"
+          <a
+            href="https://www.linkedin.com/in/olivershenton/"
+            title="LinkedIn"
+            target="_blank"
             ><iconify-icon icon="basil:linkedin-outline"></iconify-icon
           ></a>
-          <a href="mailto:olivermshenton@hotmail.com" title="Email"
+          <a
+            href="mailto:olivermshenton@hotmail.com"
+            title="Email"
+            target="_blank"
             ><iconify-icon icon="ic:outline-email"></iconify-icon
           ></a>
         </div>
 
-        <a
-          href="/CV/Oliver Shenton CV.pdf"
-          download="Oliver Shenton's CV"
-          title="Download CV"
+        <a href="" download="Oliver Shenton's CV" title="Download CV"
           ><button class="download_CV">Download CV</button></a
         >
       </div>
@@ -89,7 +98,7 @@
   <!--  -->
 
   <section>
-    <div class="experience_container">
+    <div id="experience" class="experience_container" data-offset="94">
       <h2>Experience</h2>
       <div class="button_container">
         <div class="accordion_block">
@@ -251,13 +260,11 @@
       </div>
     </div>
   </section>
-
   <!--  -->
 
   <section>
-    <div class="experience_container">
-      <h2>Experience</h2>
-
+    <div id="education" class="education_container" data-offset="94">
+      <h2>Education</h2>
       <div class="accordion_block">
         <button class="accordion">
           <h4>Keele University</h4>
@@ -380,6 +387,34 @@
   </section>
 </body>
 <!--  -->
+
+<section id="contact" class="contact_setup" data-offset="94">
+  <div>
+    <h2 class="contact_title">Get in touch!</h2>
+    <div class="contact_info_grid">
+      <div class="contact_item">
+        <iconify-icon icon="lets-icons:pin-alt"></iconify-icon>
+        <h3>Address</h3>
+        <p>Sandbach, Cheshire, CW11</p>
+      </div>
+      <div class="contact_item">
+        <iconify-icon icon="solar:phone-outline"></iconify-icon>
+        <h3>Phone</h3>
+        <p>(+44)7473826533</p>
+      </div>
+      <div class="contact_item">
+        <iconify-icon icon="oui:email"></iconify-icon>
+        <h3>Email</h3>
+        <a
+          href="mailto:olivermshenton@hotmail.com"
+          title="Email"
+          target="_blank"
+          ><p>olivermshenton@hotmail.com</p></a
+        >
+      </div>
+    </div>
+  </div>
+</section>
 
 <footer>
   <div class="footer"></div>
