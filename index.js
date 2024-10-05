@@ -47,3 +47,20 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     }
   });
 });
+
+const popup = document.getElementById('popupBox');
+const openPopupBtn = document.getElementById('openPopup');
+const closePopupBtn = document.getElementById('closePopup');
+openPopupBtn.addEventListener('click', () => {
+  popup.style.display = 'flex';
+});
+
+closePopupBtn.addEventListener('click', () => {
+  popup.style.display = 'none';
+});
+
+window.addEventListener('click', e => {
+  if (e.target === popup) {
+    popup.style.display = 'none';
+  }
+});
