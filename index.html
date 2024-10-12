@@ -11,6 +11,7 @@
   />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="index.css" />
+  <link rel="icon" type="image/x-icon" href="/Pictures/Flavicon.png" />
   <script src="index.js" defer></script>
   <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
   <link rel="icon" href="/Pictures/WCID - Coding.png" type="image/x-icon" />
@@ -24,28 +25,30 @@
 <header>
   <div class="header_container">
     <h2>Oliver Shenton</h2>
+    <nav id="navigation_bar" class="navigation_bar">
+      <a href="#portfolio" id="portfolio" class="navigation_link">Portfolio</a>
+      <a href="#about" class="navigation_link">About Me</a>
+      <a href="#experience" class="navigation_link">Experience</a>
+      <a href="#education" class="navigation_link">Education</a>
+      <a href="#contact" class="navigation_link">Contact</a>
+    </nav>
     <div class="navigation_dropdown">
-      <button class="navigation_button" onclick="navigationMenu()">
+      <button
+        id="navigation_toggle"
+        class="navigation_button"
+        onclick="toggleNavigation()"
+      >
         <iconify-icon
           id="changeIcon"
           icon="f7:line-horizontal-3"
         ></iconify-icon>
       </button>
-      <div id="dropdown" class="dropdown_content">
-        <a href="#portfolio.html" id="openPopup">Portfolio</a>
-        <a href="#about">About Me</a>
-        <a href="#experience">Experience</a>
-        <a href="#education">Education</a>
-        <a href="#contact">Contact</a>
-      </div>
     </div>
   </div>
 </header>
 <!--  -->
 
 <body>
-  <!--  -->
-
   <div id="popupBox" class="popup">
     <div class="popup_content">
       <span id="closePopup" class="close">&times;</span>
@@ -57,374 +60,363 @@
     </div>
   </div>
 
-  <section>
-    <div id="about" class="about_container" data-offset="200">
-      <img
-        class="profile_picture"
-        src="/Pictures/Profile Picture - B&W.jpg"
-        alt="Oliver Shenton profile picture"
-        title="Oliver Shenton"
-      />
-      <div class="profile_text">
-        <h1>Oliver Shenton</h1>
-        <h3>Software Developer</h3>
-        <p>
-          Welcome to my website. This platform showcases my skills, experience,
-          and passion for software development. With a strong foundation in
-          programming and problem-solving, I am actively seeking opportunities
-          in the field of software development. My goal is to apply my technical
-          expertise and continuous learning mindset to contribute to innovative
-          projects and further develop my career. Please explore my work and
-          achievements as I aim to connect with professionals and potential
-          employers in the industry.
-        </p>
-
-        <div class="links">
-          <a
-            href="https://github.com/OliverShenton"
-            title="Github"
-            target="_blank"
-            ><iconify-icon icon="ant-design:github-filled"></iconify-icon
-          ></a>
-          <a
-            href="https://www.linkedin.com/in/olivershenton/"
-            title="LinkedIn"
-            target="_blank"
-            ><iconify-icon icon="basil:linkedin-outline"></iconify-icon
-          ></a>
-          <a
-            href="mailto:olivermshenton@hotmail.com"
-            title="Email"
-            target="_blank"
-            ><iconify-icon icon="ic:outline-email"></iconify-icon
-          ></a>
-        </div>
-
-        <a href="" download="Oliver Shenton's CV" title="Download CV"
-          ><button class="download_CV">Download CV</button></a
-        >
-      </div>
-    </div>
-  </section>
-  <!--  -->
-
-  <section>
-    <div id="experience" class="experience_container" data-offset="94">
-      <h2>Experience</h2>
-      <div class="button_container">
-        <div class="accordion_block">
-          <button class="accordion">
-            <h4>Software Developer</h4>
-            <iconify-icon
-              class="accordion_icon"
-              icon="solar:alt-arrow-down-linear"
-            ></iconify-icon>
-          </button>
-          <div class="panel">
-            <p>2022 - Present</p>
-            <em>Self-Taught</em>
-            <ul class="bullet_points">
-              <li>
-                Developed and launched three mobile applications on the Google
-                Play Store, overseeing research, design, programming, and
-                debugging, resulting in over 1,000 downloads.
-              </li>
-              <li>
-                Demonstrated proficiency in HTML, CSS, JavaScript, Node.js, and
-                SQL, with a working knowledge of Java.
-              </li>
-              <li>
-                Experienced in using development tools and software such as
-                Visual Studio Code, Node.js, PostgreSQL, and Android Studio.
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="accordion_block">
-          <button class="accordion">
-            <h4>DNA Analyst</h4>
-            <iconify-icon
-              class="accordion_icon"
-              icon="solar:alt-arrow-down-linear"
-            ></iconify-icon>
-          </button>
-          <div class="panel">
-            <p>07/2021 - Present</p>
-            <em>Eurofins Forensic Services - Birchwood Park, Risley, WA36FW</em>
-            <ul class="bullet_points">
-              <li>
-                Collaborated with Laboratory Information Management System
-                (LIMS) developers, the Quality department, and Technical
-                Specialists to perform User Acceptance Tests and provide
-                comprehensive test cases.
-              </li>
-              <li>
-                Acted as a laboratory trainer and owner, responsible for
-                training new starters, supporting the lab team, and serving as
-                the point of contact for Production Supervisors.
-              </li>
-              <li>
-                Troubleshot experimental issues, addressing frequent technical
-                challenges and ensuring the smooth operation of laboratory
-                processes.
-              </li>
-              <li>
-                Proficient in a range of experimental techniques, including PCR,
-                electrophoresis, DNA analysis, and robot handling and
-                maintenance, as well as the use of genotyping software.
-              </li>
-              <li>
-                Applied analytical skills to assess DNA results, make informed
-                decisions, document lab procedures, and maintain precision in
-                sample processing, ensuring the timely and accurate release of
-                results to assist law enforcement.
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="accordion_block">
-          <button class="accordion">
-            <h4>Bar Team Member</h4>
-            <iconify-icon
-              class="accordion_icon"
-              icon="solar:alt-arrow-down-linear"
-            ></iconify-icon>
-          </button>
-          <div class="panel">
-            <p>04/2019 - 08/2022</p>
-            <em
-              >Brunning & Price - The Old Hall, Sandbach, CW111AL
-              <br />Stonegate Group - The Kiln, Newcastle-Under-Lyme, ST51PS</em
-            >
-            <ul class="bullet_points">
-              <li>
-                Developed exceptional customer service skills by efficiently
-                managing high-volume orders while ensuring a positive and
-                welcoming experience for customers.
-              </li>
-              <li>
-                Mastered multitasking abilities by simultaneously handling drink
-                preparation, cash transactions, and customer enquiries in a
-                fast-paced environment.
-              </li>
-              <li>
-                Enhanced communication skills by engaging with diverse clientele
-                and team members, ensuring smooth operations and a high standard
-                of service.
-              </li>
-              <li>
-                Refined time management through balancing busy shifts,
-                maintaining cleanliness, and restocking supplies without
-                compromising service quality.
-              </li>
-              <li>
-                Strengthened problem-solving skills by quickly resolving
-                customer complaints or operational challenges to maintain
-                satisfaction and operational flow.
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="accordion_block">
-          <button class="accordion">
-            <h4>Swimming Teacher</h4>
-            <iconify-icon
-              class="accordion_icon"
-              icon="solar:alt-arrow-down-linear"
-            ></iconify-icon>
-          </button>
-          <div class="panel">
-            <p>04/2014 - 09/2019</p>
-            <em>Sandbach Sharks Amateur Swimming Club - Sandbach</em>
-            <ul class="bullet_points">
-              <li>
-                Taught swimming techniques to children and adults, ensuring
-                skill progression and water safety awareness through tailored
-                lessons for different abilities.
-              </li>
-              <li>
-                Developed strong communication skills by clearly explaining
-                complex swimming strokes and techniques to individuals with
-                varying learning needs.
-              </li>
-              <li>
-                Adapted teaching methods to accommodate a wide range of
-                learners, including those with special needs, ensuring an
-                inclusive and supportive environment.
-              </li>
-              <li>
-                Promoted water confidence by creating engaging, fun, and
-                structured lesson plans, encouraging students to overcome fears
-                and improve their skills.
-              </li>
-              <li>
-                Ensured a safe learning environment by closely monitoring
-                students’ performance and responding promptly to potential
-                hazards or safety concerns.
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!--  -->
-
-  <section>
-    <div id="education" class="education_container" data-offset="94">
-      <h2>Education</h2>
-      <div class="accordion_block">
-        <button class="accordion">
-          <h4>Keele University</h4>
-          <iconify-icon
-            class="accordion_icon"
-            icon="solar:alt-arrow-down-linear"
-          ></iconify-icon>
-        </button>
-        <div class="panel">
-          <p>2016 - 2020</p>
-          <em>Lennard-Jones Building, Keele, Newcastle-Under-Lyme, ST55BG</em>
-          <ul class="bullet_points">
-            <li>Bachelor of Science (BSc) Hons: Forensic Science</li>
-            <li>Second Class Honours</li>
-            <li>
-              Conducted an in-depth dissertation analysing the impact of DNA
-              phenotyping on racial profiling, exploring its ethical
-              implications and influence on law enforcement practices.
-            </li>
-            <li>
-              Completed an intensive 40-hour forensic training programme at the
-              Body Farm in Tennessee, specialising in the study of human body
-              decomposition and its forensic applications.
-            </li>
-            <li>
-              Participated in a collaborative project on 'The Metabolomics of
-              Death', measuring phosphorus and sulphur levels in the heart and
-              lungs of cow and pig specimens over six months to assess the
-              accuracy of determining time of death in decaying corpses.
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="accordion_block">
-        <button class="accordion">
-          <h4>Vocational Placement</h4>
-          <iconify-icon
-            class="accordion_icon"
-            icon="solar:alt-arrow-down-linear"
-          ></iconify-icon>
-        </button>
-        <div class="panel">
-          <p>06/2019 - 09/2019</p>
-          <em>The Christies NHS Foundation Trust - Manchester, M204BX</em>
-          <ul class="bullet_points">
-            <li>
-              Collaborated effectively with PhD students, doctors, and peers,
-              fostering teamwork and contributing to advanced proton therapy
-              research.
-            </li>
-            <li>
-              Analysed complex datasets related to the BRCA2 gene, ensuring
-              accuracy and relevance for ongoing cancer research.
-            </li>
-            <li>
-              Developed strong data manipulation skills by applying Python to
-              process and model large datasets, improving the precision of early
-              cancer detection.
-            </li>
-            <li>
-              Enhanced problem-solving abilities through the creation of models
-              that optimised the accuracy of detecting cancer at its earliest
-              stages.
-            </li>
-            <li>
-              Strengthened technical proficiency in Python, utilising the
-              language to automate data analysis and streamline research
-              processes.
-            </li>
-          </ul>
-        </div>
-
-        <div class="accordion_block">
-          <button class="accordion">
-            <h4>Sandbach School</h4>
-            <iconify-icon
-              class="accordion_icon"
-              icon="solar:alt-arrow-down-linear"
-            ></iconify-icon>
-          </button>
-          <div class="panel">
-            <p>2009 - 2016</p>
-            <em>Crewe Road, Sandbach, CW113NS</em>
-            <ul class="bullet_points">
-              <li>
-                Achieved the following A-Level results: Geography (B), History
-                (C), Biology (C), and AS Maths (E).
-              </li>
-              <li>
-                Earned 10 GCSEs, including 5 A’s and 5 B’s, with top grades in
-                Maths (A), English Literature (A), and English Language (B).
-              </li>
-            </ul>
-          </div>
-
-          <div class="accordion_block">
-            <button class="accordion">
-              <h4>Other</h4>
-              <iconify-icon
-                class="accordion_icon"
-                icon="solar:alt-arrow-down-linear"
-              ></iconify-icon>
-            </button>
-            <div class="panel">
-              <ul class="bullet_points">
-                <li>Holds a full UK driving licence.</li>
-                <li>
-                  Attained a black belt in mixed martial arts, combining
-                  disciplines of Brazilian Jiu-Jitsu, Karate, and Kickboxing.
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-</body>
-<!--  -->
-
-<section id="contact" class="contact_setup" data-offset="94">
-  <div>
-    <h2 class="contact_title">Get in touch!</h2>
-    <div class="contact_info_grid">
-      <div class="contact_item">
-        <iconify-icon icon="lets-icons:pin-alt"></iconify-icon>
-        <h3>Address</h3>
-        <p>Sandbach, Cheshire, CW11</p>
-      </div>
-      <div class="contact_item">
-        <iconify-icon icon="solar:phone-outline"></iconify-icon>
-        <h3>Phone</h3>
+  <div id="about" class="about">
+    <img src="/Pictures/Profile Picture - B&W.jpg" />
+    <div class="about_flex">
+      <h1>Oliver Shenton</h1>
+      <h3>Software Developer</h3>
+      <div class="about_info">
+        <h4>Phone Number:</h4>
         <p>(+44)7473826533</p>
+        <h4>Email:</h4>
+        <p>olivermshenton@hotmail.com</p>
+        <h4>Location:</h4>
+        <p>Sandbach, CW11</p>
       </div>
-      <div class="contact_item">
-        <iconify-icon icon="oui:email"></iconify-icon>
-        <h3>Email</h3>
+      <div class="about_icons">
+        <a
+          href="https://github.com/OliverShenton"
+          title="Github"
+          target="_blank"
+          ><iconify-icon icon="ant-design:github-filled"></iconify-icon
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/olivershenton/"
+          title="LinkedIn"
+          target="_blank"
+          ><iconify-icon icon="basil:linkedin-outline"></iconify-icon
+        ></a>
         <a
           href="mailto:olivermshenton@hotmail.com"
           title="Email"
           target="_blank"
-          ><p>olivermshenton@hotmail.com</p></a
-        >
+          ><iconify-icon icon="ic:outline-email"></iconify-icon
+        ></a>
       </div>
     </div>
   </div>
-</section>
 
-<footer>
-  <div class="footer"></div>
+  <div id="intro" class="intro">
+    <h2>About Me</h2>
+    <p class="intro_p">
+      Hello, and welcome to my portfolio website. I have created this space to
+      showcase my skills, experience, and passion for software development.
+    </p>
+    <p>
+      This platform serves as a testament to both my technical expertise and as
+      a stepping stone to securing a professional role within the field.
+    </p>
+  </div>
+
+  <div id="experience" class="experience">
+    <h2>Experience</h2>
+    <div>
+      <button class="expedu_button">
+        <h4>Software Developer</h4>
+        <iconify-icon icon="solar:alt-arrow-down-linear"></iconify-icon>
+      </button>
+      <div class="button_panel">
+        <p class="panel_date">2022 - Present</p>
+        <em>Self-Learning</em>
+        <p><strong>Courses:</strong></p>
+        <div class="course_meter">
+          <h5>
+            <a
+              href="https://www.udemy.com/course/the-complete-sql-bootcamp/"
+              target="_blank"
+              >SQL</a
+            >
+            - Completed Aug 2023
+            <a
+              href="/Pictures/Certificates/The Complete SQL Bootcamp. Go from Zero to Hero - Certificate of Completion.jpg"
+              target="_blank"
+              >(View Certificate)</a
+            >
+          </h5>
+          <div class="course_tab sql"></div>
+        </div>
+        <div class="course_meter">
+          <h5>
+            <a
+              href="https://www.udemy.com/course/the-complete-javascript-course/"
+              target="_blank"
+              >JavaScript</a
+            >
+          </h5>
+          <div class="course_tab js"></div>
+        </div>
+        <div class="course_meter">
+          <h5>
+            <a
+              href="https://www.udemy.com/course/the-complete-nodejs-developer-course-2/"
+              target="_blank"
+              >Node.js</a
+            >
+          </h5>
+          <div class="course_tab node"></div>
+        </div>
+        <div class="course_meter">
+          <h5>
+            <a
+              href="https://www.udemy.com/course/java-the-complete-java-developer-course/"
+              target="_blank"
+              >Java</a
+            >
+          </h5>
+          <div class="course_tab java"></div>
+        </div>
+        <ul class="ruler">
+          <li>0%</li>
+          <li>25%</li>
+          <li>50%</li>
+          <li>75%</li>
+          <li>100%</li>
+        </ul>
+        <ul class="button_list">
+          <li>
+            Currently undertaking several courses online, including an overall
+            JavaScript course and a Node.js course, having already completed a
+            course on SQL.
+          </li>
+          <li>
+            Single-handedly researched, designed, programmed, debugged, and
+            published three mobile applications to the Google Play Store,
+            resulting in over 1,000 downloads.
+          </li>
+          <li style="list-style: none">
+            Note: These are no longer supported and have been removed from the
+            Google Play Store, but you can find them on my GitHub.
+          </li>
+          <li>
+            Proficient in HTML, CSS, JavaScript, and SQL, with some working
+            knowledge of Java.
+          </li>
+          <li>
+            Familiar with software development tools such as Visual Studio Code
+            (primary IDE), Node.js, Android Studio, API usage, GitHub, Git,
+            Heroku, and IntelliJ IDEA.
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <button class="expedu_button">
+        <h4>DNA Analyst</h4>
+        <iconify-icon icon="solar:alt-arrow-down-linear"></iconify-icon>
+      </button>
+      <div class="button_panel">
+        <p class="panel_date">07/2021 - Present</p>
+        <em>Eurofins Forensic Services - Birchwood Park, Risley, WA36FW</em>
+        <ul class="button_list">
+          <li>Progressed to an Established DNA Analyst role.</li>
+          <li>
+            Collaborated with Laboratory Information Management System (LIMS)
+            developers, the Quality department, and Technical Specialists to
+            perform user acceptance tests and provide comprehensive test cases,
+            streamlining day-to-day processes within the labs.
+          </li>
+          <li>
+            Serve as a lab trainer and owner, responsible for training new
+            starters, supporting the lab team, and leading the labs on a
+            day-to-day basis; serving as a point of contact for production
+            supervisors and ensuring that the lab is regularly maintained and
+            adheres to POFA and accreditation certifications.
+          </li>
+          <li>
+            Troubleshoot experimental issues, address frequent technical
+            challenges, and ensure the smooth operation of lab processes.
+          </li>
+          <li>
+            Proficient in a range of experimental techniques, including PCR,
+            electrophoresis, DNA analysis, manual tissue extraction, and robot
+            handling and maintenance.
+          </li>
+          <li>
+            Applied analytical skills to assess DNA results, make informed
+            decisions, document lab procedures, and maintain precision in sample
+            processing, ensuring the timely and accurate release of results to
+            assist law enforcement.
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <button class="expedu_button">
+        <h4>Bar Team Member</h4>
+        <iconify-icon icon="solar:alt-arrow-down-linear"></iconify-icon>
+      </button>
+      <div class="button_panel">
+        <p class="panel_date">04/2019 - 08/2022</p>
+        <em>Brunning & Price - The Old Hall, Sandbach, CW111AL </em>
+        <em>Stonegate Group - The Kiln, Newcastle-Under-Lyme, ST51PS</em>
+        <ul class="button_list">
+          <li>
+            Developed exceptional customer service skills by efficiently
+            managing high-volume orders while ensuring a positive and welcoming
+            experience for customers.
+          </li>
+          <li>
+            Ensured quality and consistency when handling customer orders,
+            following customer preferences, and reducing wait times.
+          </li>
+          <li>
+            Adhered to laws, regulations, and policies, including those
+            governing the sale of alcoholic beverages.
+          </li>
+          <li>
+            Processed customer payments accurately, handling cash and operating
+            point-of-sale systems.
+          </li>
+          <li>
+            Honed the ability to manage multiple tasks simultaneously, such as
+            taking orders, preparing drinks, handling payments, and cleaning the
+            bar area.
+          </li>
+          <li>
+            Developed problem-solving skills and the ability to handle various
+            situations or customer complaints calmly and professionally,
+            ensuring a positive outcome for both the customer and the
+            establishment.
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <button class="expedu_button">
+        <h4>Swimming Teacher</h4>
+        <iconify-icon icon="solar:alt-arrow-down-linear"></iconify-icon>
+      </button>
+      <div class="button_panel">
+        <p class="panel_date">04/2014 - 09/2019</p>
+        <em>Sandbach Sharks Amateur Swimming Club - Sandbach</em>
+        <ul class="button_list">
+          <li>Achieved a Level 1 Swimming Teacher Qualification.</li>
+          <li>
+            Taught swimming techniques to over 100 children and teenagers (ages
+            5-16), ensuring skill progression and water safety awareness through
+            tailored lessons for different abilities.
+          </li>
+          <li>
+            Developed strong communication skills by clearly explaining complex
+            swimming techniques to individuals with varying learning needs.
+          </li>
+          <li>
+            Ensured a safe and stimulating learning environment by closely
+            monitoring students' performance, attendance, and achievements,
+            which were fed back to both students and guardians to aid in their
+            development.
+          </li>
+          <li>
+            Enforced rules and regulations to ensure a safe and secure swimming
+            environment and monitored for potential hazardous situations.
+          </li>
+          <li>
+            Routinely assessed and graded swimmers based on a set of criteria.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div id="education" class="education">
+    <h2>Education</h2>
+    <div>
+      <button class="expedu_button">
+        <h4>Keele University</h4>
+        <iconify-icon icon="solar:alt-arrow-down-linear"></iconify-icon>
+      </button>
+      <div class="button_panel">
+        <p class="panel_date">2016 - 2020</p>
+        <em>Lennard-Jones Building, Keele, Newcastle-Under-Lyme, ST55BG</em>
+        <ul class="button_list">
+          <li>Bachelor of Science (BSc) Hons: Forensic Science.</li>
+          <li>Second Class Honours.</li>
+          <li>
+            Conducted an in-depth dissertation analysing the impact of DNA
+            phenotyping on racial profiling, exploring its ethical implications
+            and influence on law enforcement practices.
+          </li>
+          <li>
+            Completed an intensive 40-hour forensic training programme at the
+            Body Farm in Tennessee, specialising in the study of human body
+            decomposition and its forensic application." Changes:
+          </li>
+          <li>
+            Participated in a collaborative project on 'The Metabolomics of
+            Death,' measuring phosphorus and sulphur levels in the heart and
+            lungs of cow and pig specimens over six months to assess the
+            accuracy of determining time of death in decaying corpses.
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <button class="expedu_button">
+        <h4>Vocational Placement</h4>
+        <iconify-icon icon="solar:alt-arrow-down-linear"></iconify-icon>
+      </button>
+      <div class="button_panel">
+        <p class="panel_date">06/2019 - 09/2019</p>
+        <em>The Christies NHS Foundation Trust - Manchester, M204BX</em>
+        <ul class="button_list">
+          <li>
+            Collaborated with PhD students, doctors, and fellow undergraduates
+            to advance proton therapy research.
+          </li>
+          <li>
+            Analysed complex datasets related to the BRCA2 gene, ensuring
+            accuracy and relevance for ongoing cancer research.
+          </li>
+          <li>
+            Developed strong data manipulation skills by using Python to process
+            and model large datasets, then inserting them into a model designed
+            to calibrate proton therapy beams.
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <button class="expedu_button">
+        <h4>Sandbach School</h4>
+        <iconify-icon icon="solar:alt-arrow-down-linear"></iconify-icon>
+      </button>
+      <div class="button_panel">
+        <p class="panel_date">2009 - 2016</p>
+        <em>Crewe Road, Sandbach, CW113NS</em>
+        <ul class="button_list">
+          <li>
+            Achieved the following A-Level results: Geography (B), History (C),
+            Biology (C), and AS Maths (E).
+          </li>
+          <li>
+            Earned 10 GCSEs, including 5 As and 5 Bs, with top grades in Maths
+            (A), English Literature (A), and English Language (B).
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <button class="expedu_button">
+        <h4>Other</h4>
+        <iconify-icon icon="solar:alt-arrow-down-linear"></iconify-icon>
+      </button>
+      <div class="button_panel">
+        <p class="panel_date">...</p>
+        <em>...</em>
+        <ul class="button_list">
+          <li>Full UK driving licence.</li>
+          <li>
+            Black belt in mixed martial arts: karate, kickboxing, and Brazilian
+            jiu-jitsu.
+          </li>
+          <li>Novice-level Photoshop skills.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+<!--  -->
+
+<footer id="footer" class="footer">
+  <h3>Created by Oliver Shenton</h3>
 </footer>
