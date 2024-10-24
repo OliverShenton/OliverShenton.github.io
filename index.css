@@ -1,0 +1,636 @@
+/* -------------------------------------------------- */
+/* *, html, header, body, & footer */
+/* -------------------------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: Arial;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #002147;
+  color: white;
+  z-index: 1000;
+  height: 4rem;
+}
+
+body {
+  background-color: whitesmoke;
+  padding-top: 35px;
+  color: #333333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-size: 1em;
+}
+
+footer {
+  margin-top: auto;
+  padding: 1rem;
+  color: #747474;
+  border-top: 2px solid #e5e4e2;
+  text-align: center;
+}
+
+/* -------------------------------------------------- */
+/* Header Section */
+/* -------------------------------------------------- */
+.header_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.25rem;
+}
+
+.header_container h2 {
+  font-size: 1.5rem;
+}
+
+/* -------------------------------------------------- */
+/* Navigation Bar Section */
+/* -------------------------------------------------- */
+.navigation_bar {
+  display: none;
+}
+
+.navigation_bar.open {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: #f1f1f1;
+  box-shadow: 0 8px 16px rgba(51, 51, 51, 0.2);
+  right: 1.25rem;
+  top: 80%;
+  padding: 0;
+}
+
+.navigation_button {
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+}
+
+.navigation_link {
+  color: black;
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+  text-align: right;
+}
+
+.navigation_link:hover {
+  background-color: lightgray;
+}
+
+/* -------------------------------------------------- */
+/* Card Section */
+/* -------------------------------------------------- */
+.card {
+  background-color: #e5e5e2;
+  border-radius: 25px;
+  margin: 4rem auto 3.125rem;
+  padding: 2rem;
+  width: 350px;
+  text-align: center;
+  box-shadow: 0 8px 16px rgba(51, 51, 51, 0.2);
+}
+
+.card img {
+  width: 90%;
+  border-radius: 50%;
+  border: 15px solid whitesmoke;
+  margin-bottom: 1rem;
+}
+
+.card h1 {
+  font-size: 2.5rem;
+}
+
+.card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.card_info {
+  margin-bottom: 1rem;
+}
+
+.card_info h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.card_info p {
+  margin-bottom: 0.75rem;
+}
+
+.card_icons a {
+  color: #333;
+  font-size: 2.5rem;
+  padding: 0 0.5rem;
+}
+
+/* -------------------------------------------------- */
+/* About Section */
+/* -------------------------------------------------- */
+.about {
+  background-color: lightgrey;
+  padding: 2rem 2rem;
+  margin-bottom: 3.125rem;
+  text-align: center;
+}
+
+.about h2,
+.about_p1 {
+  margin-bottom: 1rem;
+}
+
+/* -------------------------------------------------- */
+/* Projects, Experience, & Education Section */
+/* -------------------------------------------------- */
+.projects,
+.experience,
+.education {
+  text-align: center;
+  margin-bottom: 3.125rem;
+}
+
+.projects h2,
+.experience h2,
+.education h2 {
+  border: 2px solid #e1e1e1;
+  border-top-width: 2px;
+  border-bottom-width: 2px;
+  padding: 1rem;
+}
+
+/* -------------------------------------------------- */
+/* Project Section */
+/* -------------------------------------------------- */
+.projects_container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 2rem;
+  justify-content: center;
+}
+
+.project_item {
+  background-color: #e5e5e2;
+  padding: 2rem;
+  box-shadow: 0 8px 16px rgba(51, 51, 51, 0.2);
+  width: 350px;
+  margin: 1.5625rem 2rem 0;
+  text-align: left;
+}
+
+/* Delete when ready */
+.project_item {
+  display: none;
+}
+
+/* Delete when ready */
+.projects_container div {
+  margin: 1.5625rem 2rem 0;
+  font-size: 2rem;
+}
+
+.project_item p {
+  margin-top: 1rem;
+}
+
+/* -------------------------------------------------- */
+/* Summary Section */
+/* -------------------------------------------------- */
+.summary_button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.5625rem auto 0;
+  width: 80%;
+  padding: 1rem;
+  background-color: #bcccdc;
+  border: none;
+  cursor: pointer;
+}
+
+.summary_button h3 {
+  flex-grow: 1;
+  text-align: center;
+  margin-left: 1rem;
+}
+
+.summary_button iconify-icon {
+  transition: transform 0.3s ease;
+}
+
+.rotated {
+  transform: rotate(180deg);
+}
+
+.summary_button_panel {
+  max-height: 0;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  text-align: left;
+  margin: auto;
+  width: 75%;
+  padding: 0 1rem;
+  transition: max-height 0.5s ease-in-out, padding 0.5s ease;
+}
+
+.summary_button_panel.active {
+  padding: 0 1rem;
+}
+
+.summary_panel_date {
+  margin-top: 1rem;
+}
+
+.summary_button_panel p,
+.summary_button_panel em {
+  display: block;
+  margin-bottom: 0.625rem;
+}
+
+.summary_list {
+  margin-left: 2rem;
+}
+
+.summary_list li {
+  margin-right: 2rem;
+  margin-bottom: 0.625rem;
+}
+
+/* -------------------------------------------------- */
+/* Summary Skills */
+/* -------------------------------------------------- */
+.summary_skills {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 0.625rem;
+  align-items: center;
+}
+
+.summary_skills p {
+  margin-right: 1rem;
+  padding: 0.25rem;
+  border: 1px solid #002147;
+  transition: 3s;
+  cursor: default;
+}
+
+.summary_skills p:hover {
+  background-color: #d9e1e9;
+  border-color: #d9e1e9;
+  transition: 0.75s;
+}
+
+/* -------------------------------------------------- */
+/* Course Meter */
+/* -------------------------------------------------- */
+.ruler {
+  position: relative;
+  width: 100%;
+  height: 20px;
+  margin: 0.625rem 0;
+  padding: 0;
+  list-style: none;
+}
+
+.ruler li {
+  position: absolute;
+  color: #333;
+  font-size: 0.75rem;
+  margin-top: 10px;
+}
+
+.ruler li::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  width: 1px;
+  height: 10px;
+  background-color: #333;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.ruler li:first-child::before {
+  left: 0;
+  transform: none;
+}
+
+.ruler li:last-child::before {
+  right: 0;
+  left: auto;
+  transform: none;
+}
+
+/* Ruler Positioning */
+.ruler li:nth-child(1) {
+  left: 0;
+}
+
+.ruler li:nth-child(2) {
+  left: 25%;
+  transform: translateX(-50%);
+}
+
+.ruler li:nth-child(3) {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.ruler li:nth-child(4) {
+  left: 75%;
+  transform: translateX(-50%);
+}
+
+.ruler li:nth-child(5) {
+  right: 0;
+  text-align: right;
+}
+
+.course_meter h5 {
+  margin-bottom: 2.5px;
+}
+
+.course_tab {
+  height: 1rem;
+  text-align: center;
+}
+
+.sql,
+.js,
+.node,
+.java {
+  background-color: #486581;
+  margin-bottom: 0.625rem;
+}
+
+.sql {
+  width: 100%;
+}
+
+.js {
+  width: 66%;
+}
+
+.node {
+  width: 68%;
+}
+
+.java {
+  width: 33%;
+}
+
+/* -------------------------------------------------- */
+/* Breakpoint 1 */
+/* -------------------------------------------------- */
+@media (min-width: 600px) {
+  /* -------------------------------------------------- */
+  /* Header */
+  /* -------------------------------------------------- */
+  header {
+    height: 4.699rem;
+  }
+
+  .header_container {
+    padding: 1.1rem 1.5rem;
+  }
+
+  .header_container h2 {
+    font-size: 1.6rem;
+  }
+
+  .navigation_bar.open {
+    right: 1.5rem;
+  }
+
+  .navigation_button {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .navigation_link {
+    font-size: 1.1rem;
+  }
+
+  .about {
+    padding-left: 2.25rem;
+    padding-right: 2.25rem;
+  }
+
+  .summary_button {
+    width: 500px;
+  }
+
+  .summary_button_panel {
+    width: 480px;
+  }
+
+  /* -------------------------------------------------- */
+  /* Card Section */
+  /* -------------------------------------------------- */
+  .card {
+    margin: 5.324rem auto 3.75rem;
+  }
+}
+
+/* -------------------------------------------------- */
+/* Breakpoint 2 */
+/* -------------------------------------------------- */
+@media (min-width: 768px) {
+  /* -------------------------------------------------- */
+  /* Header */
+  /* -------------------------------------------------- */
+  header {
+    height: 5.399rem;
+  }
+
+  .header_container {
+    padding: 1.2rem 2rem;
+  }
+
+  .header_container h2 {
+    font-size: 1.7rem;
+  }
+
+  .navigation_bar.open {
+    right: 2rem;
+  }
+
+  .navigation_button {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .navigation_link {
+    font-size: 1.2rem;
+  }
+
+  .about {
+    padding-left: 2.75rem;
+    padding-right: 2.75rem;
+  }
+
+  /* -------------------------------------------------- */
+  /* Card Section */
+  /* -------------------------------------------------- */
+  .card {
+    margin: 6.024rem auto 3.75rem;
+  }
+}
+
+/* -------------------------------------------------- */
+/* Breakpoint 3 */
+/* -------------------------------------------------- */
+@media (min-width: 1024px) {
+  /* -------------------------------------------------- */
+  /* Header */
+  /* -------------------------------------------------- */
+  header {
+    height: 5.412rem;
+  }
+
+  .header_container {
+    padding: 1.3rem 2.5rem;
+  }
+
+  .header_container h2 {
+    font-size: 1.8rem;
+  }
+
+  .navigation_bar {
+    display: flex;
+    text-align: right;
+  }
+
+  .navigation_link {
+    color: white;
+    font-size: 1.1rem;
+  }
+
+  .navigation_link:hover {
+    text-decoration: underline;
+    background-color: transparent;
+  }
+
+  .navigation_dropdown {
+    display: none;
+  }
+
+  /* -------------------------------------------------- */
+  /* Profile Section */
+  /* -------------------------------------------------- */
+  .profile_container {
+    display: flex;
+    width: 46.25rem;
+    margin: 6.037rem auto 3.75rem;
+    align-items: center;
+  }
+
+  .card {
+    flex: 1;
+    margin-right: 2.5rem;
+    margin: auto;
+  }
+
+  .about {
+    background-color: transparent;
+    padding: 0;
+    flex: 1;
+    margin-left: 2.5rem;
+    text-align: left;
+    align-items: center;
+  }
+
+  .about h2 {
+    font-size: 4rem;
+  }
+
+  .about_p1 {
+    font-size: 1.3rem;
+  }
+
+  .about_p2 {
+    font-size: 1.1rem;
+  }
+
+  /* -------------------------------------------------- */
+  /* Summary Section */
+  /* -------------------------------------------------- */
+  .summary_item {
+    max-height: auto;
+    overflow: visible;
+  }
+
+  .summary_button {
+    width: 52rem;
+  }
+
+  .summary_button_panel {
+    width: 52rem;
+  }
+}
+
+/* -------------------------------------------------- */
+/* Breakpoint 4 */
+/* -------------------------------------------------- */
+@media (min-width: 1200px) {
+  /* -------------------------------------------------- */
+  /* Header */
+  /* -------------------------------------------------- */
+  header {
+    height: 5.674rem;
+  }
+
+  .header_container {
+    padding: 1.4rem 3rem;
+  }
+
+  .header_container h2 {
+    font-size: 1.9rem;
+  }
+
+  .navigation_link {
+    font-size: 1.2rem;
+  }
+}
+
+/* -------------------------------------------------- */
+/* Breakpoint 5 */
+/* -------------------------------------------------- */
+@media (min-width: 1440px) {
+  /* -------------------------------------------------- */
+  /* Header */
+  /* -------------------------------------------------- */
+  header {
+    height: 6rem;
+  }
+
+  .header_container {
+    width: 1440px;
+    margin: auto;
+    padding: 1.5rem 3.5rem;
+  }
+
+  .header_container h2 {
+    font-size: 2rem;
+  }
+
+  .navigation_link {
+    font-size: 1.3rem;
+  }
+
+  /* -------------------------------------------------- */
+  /* Summary Section */
+  /* -------------------------------------------------- */
+}
